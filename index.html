@@ -3,11 +3,123 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Veterinaria Huellitas</title>
 </head>
 <body>
 
-    
+    <header class="bg-[#E5E5E5] flex items-center h-[12vh] p-4">
+
+        <nav class="flex items-center w-full" data-aos="fade-left">
+            <div class="flex items-center gap-4">
+                <img src="assets/logo.png" alt="Logo Veterinaria Huellitas" class="w-12 h-12">
+                <h1 class="text-3xl text-[#2B2D42]">Veterinaria Huellitas</h1>
+            </div>
+
+
+            <div class="flex items-center gap-4 ml-auto text-[#EF233C] mr-2 ">
+                <u class="flex gap-8">
+                    <li><a href="index.html" class="text-lg">Inicio</a></li>
+                    <li><a href="#nosotros" class="text-lg ">Sobre Nosotros</a></li>
+                    <li><a href="#servicios" class="text-lg ">Servicios</a></li>
+                </u>
+            </div>
+        </nav>
+
+    </header>
+
+    <main class="bg-[#EF233C] h-[76vh] flex w-full items-center justify-center">
+        
+
+        <div class="w-1/3 lg:h-[70%] xl:h-[50%] ml-40 flex flex-col items-center rounded-3xl">
+
+            <h2 class="text-4xl text-[#EDF2F4] mb-4 border-[#2B2D42] border-b-4 border-rounded-2xl pb-2 text-center">Iniciar Sesión</h2>
+
+
+            <form action="" class="flex flex-col items-center p-4 mt-5" >
+                <input type="text" name="username" id="username" class="w-80 h-10 bg-[#EDF2F4] rounded-md p-2 focus:outline-[#2B2D42] focus:outline-2" placeholder="Usuario">
+                <input type="password" name="password" id="password" class="w-80 h-10 bg-[#EDF2F4] rounded-md mt-4 p-2 focus:outline-[#2B2D42] focus:outline-2" placeholder="Contraseña">
+                <input type="submit" value="Ingresar" class="w-70 h-10 bg-[#EDF2F4] rounded-md mt-8 cursor-pointer hover:bg-[#2B2D42] hover:text-[#EDF2F4] transition-all duration-250 ease-in-out">
+            </form>
+            <div class="relative mt-4 m-auto">
+                
+                <a href="registro.html" class="text-[#EDF2F4] text-xl before:content-[''] before:absolute before:top-7 before:w-0 before:h-0 before:border-t-2 before:border-[#2B2D42] before:transition-all before:duration-250 hover:before:w-full before:ease-in-out before:cursor-pointer before:border-b-2 border-rounded-2xl">Aun no tienes cuenta? Registrate</a>
+            </div>
+        </div>
+
+        <div class="h-full flex justify-end mr-8 w-2/3">
+            <img src="assets/gato.png" alt="Gato" class="scale-x-[-1] absolute xl:right-100 xl:bottom-25 lg:right-70 lg:bottom-16 h-[90%]">
+            <img src="assets/perro.png" alt="Perro Cachorro" class="h-full absolute xl:top-53 lg:top-35 z-11" >
+        </div>
+
+    </main>
+
+    <div class="relative bg-[#2B2D42] h-[12vh] z-10">
+
+    </div>
+
+
+
+    <section class="bg-[#EDF2F4] lg:h-[100vh] xl:h-[80vh] flex items-center justify-around" data-aos="fade-right" id="nosotros">
+
+        <div class="w-1/3 h-full flex flex-col items-center justify-center">
+            <h3 class="text-2xl text-[#2B2D42] border-b-2 border-[#2B2D42] border-rounded-2xl m-8">¿Quienes Somos?</h3>
+
+            <div class="mt-4 text-pretty text-[#2B2D42] mb-10">
+                <p>
+                    En Huellitas, cuidamos a tus mascotas con la misma dedicación y amor con que vos lo hacés. Somos un equipo de profesionales comprometidos con la salud y el bienestar animal, que combina experiencia clínica con un trato cálido y humano.
+                </p>
+                <br>
+                <p>
+                    Nos apasiona acompañar a cada peludo en todas las etapas de su vida: desde sus primeras vacunas hasta los controles más delicados. Contamos con equipamiento de calidad, atención personalizada y un ambiente pensado para que tanto vos como tu mascota se sientan cómodos y contenidos.
+                </p>
+                <br>
+                <p>
+                    Porque para nosotros no son "mascotas", son parte de la familia. Y en Huellitas, cada consulta es una caricia al corazón.
+                </p>
+            </div>
+        </div>
+
+
+
+        <div class="w-1/3 h-[40%] bg-[#2B2D42] rounded-3xl pr-8 pt-8 relative">
+            <video src="assets/5586226-coll-wavebreak-holding-1920x1080_QfQvVD02.mp4" autoplay muted loop class="rounded-3xl absolute top-10 right-10"></video>
+        </div>
+
+    </section>
+
+    <section id="servicios" class="bg-[#EF233C] h-[80vh] flex flex-col items-center justify-center">
+
+        <h4 class="text-2xl text-[#EDF2F4] border-b-2 border-[#EDF2F4] border-rounded-2xl mb-12 ">Nuestros Servicios</h4>
+        
+
+        <div class="w-3/4 flex items-center justify-center">
+
+            <ul class="grid grid-cols-3 gap-x-20 gap-y-10">
+                <li class="h-[20vh] w-[20vh] bg-[#EDF2F4] rounded-xl text-center flex flex-col items-center justify-center"><i class="fa-solid fa-syringe text-4xl text-[#2B2D42] p-2"></i><p class="text-[#2B2D42] text-center">Vacunacion</p></li>
+                <li class="h-[20vh] w-[20vh] bg-[#EDF2F4] rounded-xl text-center flex flex-col items-center justify-center"><i class="fa-solid fa-house-chimney-medical text-4xl text-[#2B2D42] p-2"></i><p class="text-[#2B2D42] text-center">Consulta Medica</p></li>
+                <li class="h-[20vh] w-[20vh] bg-[#EDF2F4] rounded-xl text-center flex flex-col items-center justify-center"><i class="fa-solid fa-virus-slash p-2 text-4xl text-[#2B2D42]"></i><p class="text-[#2B2D42] text-center lg:text-sm xl:text-lg">Desparasitacion</p></li>
+                <li class="h-[20vh] w-[20vh] bg-[#EDF2F4] rounded-xl text-center flex flex-col items-center justify-center"><i class="fa-solid fa-user-doctor text-4xl text-[#2B2D42] p-2"></i><p class="text-[#2B2D42] text-center">Cirugias</p></li>
+                <li class="h-[20vh] w-[20vh] bg-[#EDF2F4] rounded-xl text-center flex flex-col items-center justify-center"><i class="fa-solid fa-bath text-4xl text-[#2B2D42] p-2"></i><p class="text-[#2B2D42] text-center">Peluqueria y Baño</p></li>
+                <li class="h-[20vh] w-[20vh] bg-[#EDF2F4] rounded-xl text-center flex flex-col items-center justify-center"><i class="fa-solid fa-bowl-food text-4xl text-[#2B2D42] p-2"></i><p class="text-[#2B2D42] text-center">Venta de Alimentos</p></li>
+            </ul>
+
+        </div>
+
+    </section>
+
+    <footer class="bg-[#2B2D42] h-[20vh]">
+
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
     
 </body>
 </html>
