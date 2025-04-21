@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <link rel="stylesheet" href="styles/styles.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -11,25 +13,38 @@
 </head>
 <body>
 
-    <header class="bg-[#E5E5E5] flex items-center h-[12vh] p-4">
-
-        <nav class="flex items-center w-full" data-aos="fade-left">
-            <div class="flex items-center gap-4">
-                <img src="assets/logo.png" alt="Logo Veterinaria Huellitas" class="w-12 h-12">
-                <h1 class="text-3xl text-[#2B2D42]">Veterinaria Huellitas</h1>
-            </div>
+    <header class="mb-2">
 
 
-            <div class="flex items-center gap-4 ml-auto text-[#EF233C] mr-2 ">
-                <u class="flex gap-8">
-                    <li><a href="index.html" class="text-lg">Inicio</a></li>
-                    <li><a href="#nosotros" class="text-lg ">Sobre Nosotros</a></li>
-                    <li><a href="#servicios" class="text-lg ">Servicios</a></li>
-                </u>
-            </div>
-        </nav>
-
+        <div class=" relative mx-auto  flex  flex-col  sm:flex-row sm:items-center gap-4 py-4 max-w-screen-lg sm:justify-between">
+           <div class="flex items-center">
+            <a href="index.html"><img src="assets/logo.png" alt="Logo Veterinaria Huellitas" class="w-12 h-12"></a>
+            <a href="index.html"><h1 class="text-3xl text-[#2B2D42]">Veterinaria Huellitas</h1></a>
+        </div>
+       
+    
+       <input class="peer hidden" type="checkbox" id="navbar-open">
+       <label for="navbar-open" class="absolute right-0 mt-2 sm:hidden">
+       
+            <ion-icon name="menu" class="text-3xl cursor-pointer "></ion-icon>
+             
+       </label>
+    
+   
+    <nav class=" peer-checked:block hidden sm:block">
+            <ul class="flex flex-col gap-y-4 sm:flex-row sm:gap-x-8">
+                <li class="md:hover:bg-[#EF233C] px-4 py-2 md:rounded-full"><a href="index.html" class="text-lg md:hover:text-white hover:text-[#ed808d]">Inicio</a></li>
+                <li class="md:hover:bg-[#EF233C] px-4 py-2 md:rounded-full"><a href="sobreNosotros.html" class="text-lg md:hover:text-white hover:text-[#ed808d]">Sobre Nosotros</a></li>
+                <li class="md:hover:bg-[#EF233C] px-4 py-2 md:rounded-full"><a href="servicios.html" class="text-lg md:hover:text-white hover:text-[#ed808d]">Servicios</a></li>
+                <li class="md:hover:bg-[#EF233C] px-4 py-2 md:rounded-full"><a href="sesion.html" class="text-lg md:hover:text-white  hover:text-[#ed808d]">Iniciar Sesion</a></li>
+            </ul>
+        
+        
+    </nav>
+</div>
     </header>
+   
+
 
     <main class="bg-[#EF233C] h-[76vh] flex w-full items-center justify-center">
         
@@ -37,6 +52,7 @@
         <div class="w-1/3 lg:h-[70%] xl:h-[50%] ml-40 flex flex-col items-center rounded-3xl">
 
             <h2 class="text-4xl text-[#EDF2F4] mb-4 border-[#2B2D42] border-b-4 border-rounded-2xl pb-2 text-center">Iniciar Sesión</h2>
+
 
 
             <form action="" class="flex flex-col items-center p-4 mt-5" >
@@ -123,3 +139,4 @@
     
 </body>
 </html>
+
