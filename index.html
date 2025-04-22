@@ -6,15 +6,14 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script src="https://kit.fontawesome.com/4f14c85071.js" crossorigin="anonymous"></script>
+
     <link rel="stylesheet" href="styles/styles.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Veterinaria Huellitas</title>
 </head>
 <body>
 
     <header class="mb-2">
-
 
         <div class=" relative mx-auto  flex  flex-col  sm:flex-row sm:items-center gap-4 py-4 max-w-screen-lg sm:justify-between">
            <div class="flex items-center">
@@ -26,17 +25,16 @@
        <input class="peer hidden" type="checkbox" id="navbar-open">
        <label for="navbar-open" class="absolute right-0 mt-2 sm:hidden">
        
-            <ion-icon name="menu" class="text-3xl cursor-pointer "></ion-icon>
+            <ion-icon name="menu" class="text-4xl cursor-pointer"></ion-icon>
              
        </label>
     
    
-    <nav class=" peer-checked:block hidden sm:block">
-            <ul class="flex flex-col gap-y-4 sm:flex-row sm:gap-x-8">
-                <li class="md:hover:bg-[#EF233C] px-4 py-2 md:rounded-full"><a href="index.html" class="text-lg md:hover:text-white hover:text-[#ed808d]">Inicio</a></li>
-                <li class="md:hover:bg-[#EF233C] px-4 py-2 md:rounded-full"><a href="sobreNosotros.html" class="text-lg md:hover:text-white hover:text-[#ed808d]">Sobre Nosotros</a></li>
-                <li class="md:hover:bg-[#EF233C] px-4 py-2 md:rounded-full"><a href="servicios.html" class="text-lg md:hover:text-white hover:text-[#ed808d]">Servicios</a></li>
-                <li class="md:hover:bg-[#EF233C] px-4 py-2 md:rounded-full"><a href="sesion.html" class="text-lg md:hover:text-white  hover:text-[#ed808d]">Iniciar Sesion</a></li>
+    <nav class=" peer-checked:block hidden sm:block text-[#EF233C]">
+            <ul class="flex flex-col gap-y-4 sm:flex-row sm:gap-x-8 pl-5">
+                <li class=" "><a href="index.html" class="text-lg">Inicio</a></li>
+                <li class=" "><a href="#nosotros" class="text-lg">Sobre Nosotros</a></li>
+                <li class="  "><a href="#servicios" class="text-lg">Servicios</a></li>
             </ul>
         
         
@@ -44,15 +42,12 @@
 </div>
     </header>
    
-
-
     <main class="bg-[#EF233C] h-[76vh] flex w-full items-center justify-center">
         
 
         <div class="w-1/3 lg:h-[70%] xl:h-[50%] ml-40 flex flex-col items-center rounded-3xl">
 
             <h2 class="text-4xl text-[#EDF2F4] mb-4 border-[#2B2D42] border-b-4 border-rounded-2xl pb-2 text-center">Iniciar Sesión</h2>
-
 
 
             <form action="" class="flex flex-col items-center p-4 mt-5" >
@@ -101,33 +96,72 @@
 
 
 
-        <div class="w-1/3 h-[40%] bg-[#2B2D42] rounded-3xl pr-8 pt-8 relative">
+        <div class="w-1/3 h-[40%] bg-[#2B2D42] rounded-3xl pr-8 pt-8 relative ">
             <video src="assets/5586226-coll-wavebreak-holding-1920x1080_QfQvVD02.mp4" autoplay muted loop class="rounded-3xl absolute top-10 right-10"></video>
         </div>
 
     </section>
 
-    <section id="servicios" class="bg-[#EF233C] h-[80vh] flex flex-col items-center justify-center">
+    <section id="servicios" class="bg-[#EF233C] h-[80vh] flex flex-col items-center justify-center max-sm:h-[180vh] max-lg:h-[100vh] ">
 
         <h4 class="text-2xl text-[#EDF2F4] border-b-2 border-[#EDF2F4] border-rounded-2xl mb-12 ">Nuestros Servicios</h4>
         
 
         <div class="w-3/4 flex items-center justify-center">
 
-            <ul class="grid grid-cols-3 gap-x-20 gap-y-10">
-                <li class="h-[20vh] w-[20vh] bg-[#EDF2F4] rounded-xl text-center flex flex-col items-center justify-center"><i class="fa-solid fa-syringe text-4xl text-[#2B2D42] p-2"></i><p class="text-[#2B2D42] text-center">Vacunacion</p></li>
-                <li class="h-[20vh] w-[20vh] bg-[#EDF2F4] rounded-xl text-center flex flex-col items-center justify-center"><i class="fa-solid fa-house-chimney-medical text-4xl text-[#2B2D42] p-2"></i><p class="text-[#2B2D42] text-center">Consulta Medica</p></li>
-                <li class="h-[20vh] w-[20vh] bg-[#EDF2F4] rounded-xl text-center flex flex-col items-center justify-center"><i class="fa-solid fa-virus-slash p-2 text-4xl text-[#2B2D42]"></i><p class="text-[#2B2D42] text-center lg:text-sm xl:text-lg">Desparasitacion</p></li>
-                <li class="h-[20vh] w-[20vh] bg-[#EDF2F4] rounded-xl text-center flex flex-col items-center justify-center"><i class="fa-solid fa-user-doctor text-4xl text-[#2B2D42] p-2"></i><p class="text-[#2B2D42] text-center">Cirugias</p></li>
-                <li class="h-[20vh] w-[20vh] bg-[#EDF2F4] rounded-xl text-center flex flex-col items-center justify-center"><i class="fa-solid fa-bath text-4xl text-[#2B2D42] p-2"></i><p class="text-[#2B2D42] text-center">Peluqueria y Baño</p></li>
-                <li class="h-[20vh] w-[20vh] bg-[#EDF2F4] rounded-xl text-center flex flex-col items-center justify-center"><i class="fa-solid fa-bowl-food text-4xl text-[#2B2D42] p-2"></i><p class="text-[#2B2D42] text-center">Venta de Alimentos</p></li>
+            <ul class="grid grid-cols-3 gap-x-20 gap-y-10 max-sm:grid-cols-1 max-lg:grid-cols-2">
+                <li class="cursor-pointer h-[20vh] w-[20vh] bg-[#EDF2F4] rounded-xl text-center flex flex-col items-center justify-center transition delay-100 duration-150 ease-in-out hover:-translate-y-1 hover:scale-110 hover:opacity-90">
+                    <i class="fa-solid fa-syringe text-4xl text-[#2B2D42] p-2"></i><p class="text-[#2B2D42] text-center">Vacunacion</p>
+                </li>
+                <li class="cursor-pointer h-[20vh] w-[20vh] bg-[#EDF2F4] rounded-xl text-center flex flex-col items-center justify-center transition delay-100 duration-150 ease-in-out hover:-translate-y-1 hover:scale-110 hover:opacity-90">
+                    <i class="fa-solid fa-house-chimney-medical text-4xl text-[#2B2D42] p-2"></i><p class="text-[#2B2D42] text-center">Consulta Medica</p>
+                </li>
+                <li class="cursor-pointer h-[20vh] w-[20vh] bg-[#EDF2F4] rounded-xl text-center flex flex-col items-center justify-center transition delay-100 duration-150 ease-in-out hover:-translate-y-1 hover:scale-110 hover:opacity-90">
+                    <i class="fa-solid fa-virus-slash p-2 text-4xl text-[#2B2D42]"></i><p class="text-[#2B2D42] text-center lg:text-sm xl:text-lg">Desparasitacion</p>
+                </li>
+                <li class="cursor-pointer h-[20vh] w-[20vh] bg-[#EDF2F4] rounded-xl text-center flex flex-col items-center justify-center transition delay-100 duration-150 ease-in-out hover:-translate-y-1 hover:scale-110 hover:opacity-90">
+                    <i class="fa-solid fa-user-doctor text-4xl text-[#2B2D42] p-2"></i><p class="text-[#2B2D42] text-center">Cirugias</p>
+                </li>
+                <li class="cursor-pointer h-[20vh] w-[20vh] bg-[#EDF2F4] rounded-xl text-center flex flex-col items-center justify-center transition delay-100 duration-150 ease-in-out hover:-translate-y-1 hover:scale-110 hover:opacity-90">
+                    <i class="fa-solid fa-bath text-4xl text-[#2B2D42] p-2"></i><p class="text-[#2B2D42] text-center">Peluqueria y Baño</p>
+                </li>
+                <li class="cursor-pointer h-[20vh] w-[20vh] bg-[#EDF2F4] rounded-xl text-center flex flex-col items-center justify-center transition delay-100 duration-150 ease-in-out hover:-translate-y-1 hover:scale-110 hover:opacity-90">
+                    <i class="fa-solid fa-bowl-food text-4xl text-[#2B2D42] p-2"></i><p class="text-[#2B2D42] text-center">Venta de Alimentos</p>
+                </li>
+           
             </ul>
 
         </div>
 
     </section>
 
-    <footer class="bg-[#2B2D42] h-[20vh]">
+    <footer class="bg-[#2B2D42] h-[25vh] flex items-center justify-around flex-wrap max-md:h-[40vh] max-sm:flex-wrap-reverse">
+       
+    <div class="flex items-center justify-center">
+        <img src="assets/logo.png" alt="Logo Veterinaria Huellitas" class="w-12 h-12 mr-5">
+        <p class="text-white">&#169 2025. Todos los derechos reservados | </p>
+    </div>
+
+    <div class="text-white ">
+        <h4 class="text-[#EF233C]">Contacto</h4>
+        <ul class="text-sm">
+            <li class="pb-1">Atención Teléfonica:</li>
+            <li class="pb-3"><a href="#" class="hover:text-[#EF233C]">0810-222-1212</a></li>
+            <li class="pb-1">Atención Whatsapp:</li>
+            <li class="pb-3"><a href="#" class="hover:text-[#EF233C]">+54-911-2121-2222</a></li>
+            <li class="pb-1">Lunes a Sábados de 9 a 21 hs</li>
+            <li>Domingos de 10 a 20 hs</li>
+        </ul>
+    </div>
+
+    <div class="text-white">
+        <h4 class="text-[#EF233C] pb-3">Redes sociales</h4>
+        <ul class="text-2xl flex items-center  justify-center  gap-x-4">
+            <li class=""><a href="#" class="hover:text-[#EF233C]"><i class="fa-brands fa-facebook"></i></a></li>
+            <li class=""><a href="#" class="hover:text-[#EF233C]"><i class="fa-brands fa-instagram"></i></a></li>
+            <li class=""><a href="#" class="hover:text-[#EF233C]"><i class="fa-brands fa-square-x-twitter"></i></a></li>
+        </ul>
+    </div>
 
     </footer>
 
