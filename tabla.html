@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script src="https://kit.fontawesome.com/4f14c85071.js" crossorigin="anonymous"></script>
+
+
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>Veterinaria Huellitas</title>
+</head>
+<body>
+    <main>
+       
+        
+      
+
+<div class="relative overflow-x-auto shadow-md rounded-tr-lg rounded-tl-lg max-w-[90%] max-lg:max-w-full m-auto">
+    <table class="w-full text-sm text-left ">
+        <thead class="text-xs  uppercase text-[#edf2f4] bg-[#ef233c] ">
+            <tr>
+                <th  class="px-6 py-3">
+                    Nombre
+                </th>
+                <th  class="px-6 py-3">
+                    tipo
+                </th>
+                <th  class="px-6 py-3">
+                    raza
+                </th>
+                <th  class="px-6 py-3">
+                    dueño
+                </th>
+                <th  class="px-6 py-3">
+                    accion
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class=" odd:bg-[#2B2D42] even:bg-[#7C8AA2] odd:text-[#edf2f4] even:text-[#2b2d42]">
+                <th class="px-6 py-4 font-medium text-[#7c8aa2]  ">
+                    Roberto
+                </th>
+                <td class="px-6 py-4">
+                    Canino
+                </td>
+                <td class="px-6 py-4">
+                    Callejero
+                </td>
+                <td class="px-6 py-4">
+                    Axel
+                </td>
+                <td class="px-6 py-4">
+                    <a href="#" class="font-medium hover:font-bold even:text-blue-900 odd:text-blue-300 hover:text-blue-100 ">Editar</a>
+                </td>
+            </tr>
+            <tr class=" odd:bg-[#2B2D42] even:bg-[#7C8AA2] odd:text-[#edf2f4] ">
+                <th class="px-6 py-4 font-medium even:text-[#7c8aa2]odd:text-[#2B2D42] ">
+                    Roberto
+                </th>
+                <td class="px-6 py-4">
+                    Canino
+                </td>
+                <td class="px-6 py-4">
+                    Callejero
+                </td>
+                <td class="px-6 py-4">
+                    Axel
+                </td>
+                <td class="px-6 py-4">
+                    <a href="#" class="font-medium hover:font-bold odd:text-blue-900 even:text-blue-300  hover:text-blue-100 ">Editar</a>
+                </td>
+            </tr>
+            <tr class=" odd:bg-[#2B2D42] even:bg-[#7C8AA2] odd:text-[#edf2f4] ">
+                <th class="px-6 py-4 font-medium text-[#7c8aa2]  ">
+                    Roberto
+                </th>
+                <td class="px-6 py-4">
+                    Canino
+                </td>
+                <td class="px-6 py-4">
+                    Callejero
+                </td>
+                <td class="px-6 py-4">
+                    Axel
+                </td>
+                <td class="px-6 py-4">
+                    <a href="#" class="font-medium hover:font-bold even:text-blue-900 odd:text-blue-300 hover:text-blue-100">Editar</a>
+                </td>
+            </tr>
+           
+        </tbody>
+    </table>
+</div>
+
+<div class="p-4 mt-10 w-120 border-2 rounded-3xl bg-[#ef233c] flex justify-center items-center">
+    <form class="">      <!--clase buscador-->
+        <input type="hidden" name="buscar" >
+        <select name="opcion" required class="bg-white p-1 rounded-tl-lg rounded-bl-lg">
+            <option value="usuario">Usuario</option>
+            <option value="id">Id</option>
+        </select>
+        <input type="text" name="busqueda" require class="border-2 bg-white p-1" placeholder="Ingresar busqueda">
+        <input type="submit" value="Buscar" class="buscar bg-white p-1 border-2 rounded-tr-lg rounded-br-lg cursor-pointer">
+    </form>
+</div>
+
+    </main>
+</body>
+<footer>
+</footer>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+    AOS.init();
+</script>
