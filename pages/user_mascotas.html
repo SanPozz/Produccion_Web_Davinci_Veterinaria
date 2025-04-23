@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Tus Mascotas</title>
+</head>
+<body class="h-screen flex">
+
+    <aside class="h-full w-[10%]">
+    
+        <nav class="flex flex-col bg-[#2B2D42] h-full w-full items-center justify-between">
+            <ul class="flex flex-col gap-y-10 pt-20 w-full items-center h-[80%]">
+                <li class="w-full text-center h-[12%] flex items-center justify-center">
+                    <a href="user_dashboard.html" class="text-[#EDF2F4] flex flex-col items-center justify-center gap-2 w-full bg-[#2B2D42] hover:brightness-160 transition-all duration-300">
+                        <i class="fa-solid fa-wrench text-3xl text-[#EDF2F4] mt-2"></i> 
+                        Dashboard
+                    </a>
+                </li>
+                <li class="w-full text-center h-[12%] flex items-center justify-center ">
+                    <a href="user_mascotas.html" class="text-[#EDF2F4] flex flex-col items-center justify-center gap-2 w-full bg-[#2B2D42] hover:brightness-160 transition-all duration-300">
+                        <i class="fa-solid fa-paw text-3xl text-[#EDF2F4] mt-2"></i> 
+                        Tus Mascotas
+                    </a>
+                </li>
+                <li class="w-full text-center h-[12%] flex items-center justify-center ">
+                    <a href="user_facturas.html" class="text-[#EDF2F4] flex flex-col items-center justify-center gap-2 w-full bg-[#2B2D42] hover:brightness-160 transition-all duration-300">
+                        <i class="fa-solid fa-receipt text-3xl text-[#EDF2F4] mt-2"></i> 
+                        Tus Facturas
+                    </a>
+                </li>
+            </ul>
+    
+            <div class="flex flex-col items-center justify-center w-full h-[20%]">
+                <a href="#" class="text-[#EDF2F4] flex flex-col items-center justify-center gap-2 w-full bg-[#2B2D42] hover:brightness-160 transition-all duration-300"><i class="fa-solid fa-user text-2xl text-[#EDF2F4] mt-2"></i>Cerrar Sesion</a>
+            </div>
+        </nav>
+
+    </aside>    
+
+    <main class="h-full w-[90%] flex flex-col items-center bg-[#EDF2F4]">
+
+        <h1 class="text-4xl font-semibold text-[#2B2D42] border-b-4 border-[#2B2D42] border-rounded-2xl mb-6 mt-6 ">Tus Mascotas</h1>
+
+        <section class="flex flex-col items-center h-[90%] w-full overflow-y-scroll">
+            <article class="flex items-center justify-around bg-[#2B2D42] rounded-2xl w-[70vw] mb-12">
+                <img src="/assets/user_dashboard/dog.png" alt="Perro" class="w-[30%] ">
+                <div>
+                    <h2 class="text-2xl text-[#EDF2F4]">Mascota 1</h2>
+                    <p class="text-2xl text-[#EDF2F4]">Descripción de la mascota 1</p>
+                    <p class="text-2xl text-[#EDF2F4]">Raza: <span class="">Perro</span></p>
+                </div>
+
+            </article>
+
+            <article class="flex items-center justify-around bg-[#2B2D42] rounded-2xl w-[70vw] mb-12">
+                <img src="/assets/user_dashboard/cat.png" alt="Gato" class="w-[30%]">
+                <div>
+                    <h2 class="text-2xl text-[#EDF2F4]">Mascota 2</h2>
+                    <p class="text-2xl text-[#EDF2F4]">Descripción de la mascota 2</p>
+                    <p class="text-2xl text-[#EDF2F4]">Raza: <span class="">Gato</span></p>
+                </div>
+
+            </article>
+
+        </section>
+
+    </main>
+
+
+
+    
+</body>
+</html>
