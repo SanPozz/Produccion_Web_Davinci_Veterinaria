@@ -1,0 +1,13 @@
+            <h2 class="text-4xl text-[#EDF2F4] mb-4 border-[#2B2D42] border-b-4 border-rounded-2xl pb-2 text-center">Iniciar Sesión</h2>
+
+
+
+            <form action="" class="flex flex-col items-center p-4 mt-5" >
+                <input type="text" name="username" id="username" class="w-80 h-10 bg-[#EDF2F4] rounded-md p-2 focus:outline-[#2B2D42] focus:outline-2" placeholder="Usuario">
+                <input type="password" name="password" id="password" class="w-80 h-10 bg-[#EDF2F4] rounded-md mt-4 p-2 focus:outline-[#2B2D42] focus:outline-2" placeholder="Contraseña">
+                <input type="submit" value="Ingresar" class="w-70 h-10 bg-[#EDF2F4] rounded-md mt-8 cursor-pointer hover:bg-[#2B2D42] hover:text-[#EDF2F4] transition-all duration-250 ease-in-out">
+            </form>
+            <div class="relative mt-4 m-auto">
+                
+                <a href="registro.html" class="text-[#EDF2F4] text-xl before:content-[''] before:absolute before:top-7 before:w-0 before:h-0 before:border-t-2 before:border-[#2B2D42] before:transition-all before:duration-250 hover:before:w-full before:ease-in-out before:cursor-pointer before:border-b-2 border-rounded-2xl">Aun no tienes cuenta? Registrate</a>
+            </div>

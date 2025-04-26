@@ -33,10 +33,10 @@
    
     <nav class=" peer-checked:block hidden sm:block">
             <ul class="flex flex-col gap-y-4 sm:flex-row sm:gap-x-8">
-                <li class="md:hover:bg-[#EF233C] px-4 py-2 md:rounded-full"><a href="index.html" class="text-lg md:hover:text-white hover:text-[#ed808d]">Inicio</a></li>
-                <li class="md:hover:bg-[#EF233C] px-4 py-2 md:rounded-full"><a href="sobreNosotros.html" class="text-lg md:hover:text-white hover:text-[#ed808d]">Sobre Nosotros</a></li>
-                <li class="md:hover:bg-[#EF233C] px-4 py-2 md:rounded-full"><a href="servicios.html" class="text-lg md:hover:text-white hover:text-[#ed808d]">Servicios</a></li>
-                <li class="md:hover:bg-[#EF233C] px-4 py-2 md:rounded-full"><a href="sesion.html" class="text-lg md:hover:text-white  hover:text-[#ed808d]">Iniciar Sesion</a></li>
+                <li class=" px-4 py-2 md:rounded-full"><a href="index.html" class="text-lg md:after:content-[''] after:block after:w-0 after:h-0.5 after:bg-[#2B2D42] after:transition-all after:duration-300 hover:after:w-[70%]">Inicio</a></li>
+                <li class=" px-4 py-2 md:rounded-full"><a href="sobreNosotros.html" class="text-lg md:after:content-[''] after:block after:w-0 after:h-0.5 after:bg-[#2B2D42] after:transition-all after:duration-300 hover:after:w-[70%]">Sobre Nosotros</a></li>
+                <li class=" px-4 py-2 md:rounded-full"><a href="servicios.html" class="text-lg md:after:content-[''] after:block after:w-0 after:h-0.5 after:bg-[#2B2D42] after:transition-all after:duration-300 hover:after:w-[70%]">Servicios</a></li>
+                <li class=" px-4 py-2 md:rounded-full"><a href="sesion.html" class="text-lg md:after:content-[''] after:block after:w-0 after:h-0.5 after:bg-[#2B2D42] after:transition-all after:duration-300 hover:after:w-[70%]">Iniciar Sesion</a></li>
             </ul>
         
         
@@ -49,26 +49,20 @@
     <main class="bg-[#EF233C] h-[76vh] flex w-full items-center justify-center">
         
 
-        <div class="w-1/3 lg:h-[70%] xl:h-[50%] ml-40 flex flex-col items-center rounded-3xl">
+        <div class="w-1/3 ml-30 flex flex-col items-center justify-center rounded-3xl">
 
-            <h2 class="text-4xl text-[#EDF2F4] mb-4 border-[#2B2D42] border-b-4 border-rounded-2xl pb-2 text-center">Iniciar Sesión</h2>
+            <h2 class="text-3xl text-[#EDF2F4] text-center mb-10">¿Todavia no ingresaste a nuestro sistema?</h2>
 
-
-
-            <form action="" class="flex flex-col items-center p-4 mt-5" >
-                <input type="text" name="username" id="username" class="w-80 h-10 bg-[#EDF2F4] rounded-md p-2 focus:outline-[#2B2D42] focus:outline-2" placeholder="Usuario">
-                <input type="password" name="password" id="password" class="w-80 h-10 bg-[#EDF2F4] rounded-md mt-4 p-2 focus:outline-[#2B2D42] focus:outline-2" placeholder="Contraseña">
-                <input type="submit" value="Ingresar" class="w-70 h-10 bg-[#EDF2F4] rounded-md mt-8 cursor-pointer hover:bg-[#2B2D42] hover:text-[#EDF2F4] transition-all duration-250 ease-in-out">
-            </form>
-            <div class="relative mt-4 m-auto">
-                
-                <a href="registro.html" class="text-[#EDF2F4] text-xl before:content-[''] before:absolute before:top-7 before:w-0 before:h-0 before:border-t-2 before:border-[#2B2D42] before:transition-all before:duration-250 hover:before:w-full before:ease-in-out before:cursor-pointer before:border-b-2 border-rounded-2xl">Aun no tienes cuenta? Registrate</a>
+            <div class="flex gap-7">
+                <a href="" class="bg-[#2B2D42] p-4 rounded-lg text-[#EDF2F4] hover:transform hover:scale-115 transition-all duration-300">Iniciar Sesion</a>
+                <a href="" class="bg-[#EDF2F4] p-4 rounded-lg text-[#2B2D42] hover:transform hover:scale-115 transition-all duration-300">Registrarse</a>
             </div>
+
+
         </div>
 
-        <div class="h-full flex justify-end mr-8 w-2/3">
-            <img src="assets/gato.png" alt="Gato" class="scale-x-[-1] absolute xl:right-109 xl:bottom-20 lg:right-77 lg:bottom-5 h-[83%]">
-            <img src="assets/perro.png" alt="Perro Cachorro" class="h-full absolute xl:top-50 lg:top-[161px] z-11" >
+        <div class="h-full flex justify-end mr-8 w-1/3 ">
+            <img src="assets/perroIndex.png" alt="Perro Cachorro" class="h-full z-11" >
         </div>
 
     </main>
