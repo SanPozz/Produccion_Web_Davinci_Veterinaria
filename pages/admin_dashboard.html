@@ -10,34 +10,30 @@
 </head>
 <body>
     
-    <header class="bg-[#EDF2F4] border-b-5 border-[#2B2D42]">
+    <header class="px-5 bg-[#EDF2F4] border-b-5 border-[#2B2D42]">
 
-
-        <div class=" relative mx-auto  flex  flex-col  sm:flex-row sm:items-center gap-4 py-4 max-w-screen-lg sm:justify-between">
+        <div class="relative mx-auto  flex  flex-col  sm:flex-row sm:items-center gap-4 py-4 max-w-screen-lg sm:justify-between">
            <div class="flex items-center">
-            <a href="index.html"><img src="/assets/logo.png" alt="Logo Veterinaria Huellitas" class="w-12 h-12"></a>
+            <a href="index.html"><img src="../assets/logo.png" alt="Logo Veterinaria Huellitas" class="w-12 h-12"></a>
             <a href="index.html"><h1 class="text-3xl text-[#2B2D42]">Veterinaria Huellitas</h1></a>
-        </div>
-       
-    
+           </div>
+           
        <input class="peer hidden" type="checkbox" id="navbar-open">
        <label for="navbar-open" class="absolute right-0 mt-2 sm:hidden">
        
-            <ion-icon name="menu" class="text-3xl cursor-pointer "></ion-icon>
+          <i class="fa-solid fa-bars text-4xl cursor-pointer"></i>
              
        </label>
     
    
-    <nav class=" peer-checked:block hidden sm:block">
-            <ul class="flex flex-col gap-y-4 sm:flex-row sm:gap-x-8">
-               
-                <li class="md:hover:bg-[#EF233C] px-4 py-2 md:rounded-full"><a href="sesion.html" class="text-lg md:hover:text-white  hover:text-[#ed808d]">Iniciar Sesion</a></li>
+       <nav class=" peer-checked:block hidden sm:block text-[#EF233C]">
+            <ul class="flex flex-col gap-y-4 sm:flex-row sm:gap-x-8 pl-5">
+                <li class="md:hover:bg-[#EF233C] px-4 py-2 md:rounded-full"><a href="sesion.html" class="text-lg md:hover:text-white  hover:text-[#ed808d]">Cerrar sesion</a></li>
             </ul>
-        
-        
-    </nav>
-</div>
+       </nav>
+       </div>
     </header>
+    
 
     <main class="bg-[#EDF2F4] h-[100vh] flex items-center justify-center">
 
@@ -66,7 +62,7 @@
 
     </main>
 
-    <footer class="bg-[#2B2D42] h-[25vh] flex items-center justify-around flex-wrap max-md:h-[40vh] max-sm:flex-wrap-reverse">
+    <footer class="bg-[#2B2D42] h-[30vh] flex items-center justify-around flex-wrap max-md:h-[40vh] max-sm:flex-wrap-reverse">
        
         <div class="flex items-center justify-center">
             <img src="../assets/logo.png" alt="Logo Veterinaria Huellitas" class="w-12 h-12 mr-5">
@@ -95,6 +91,11 @@
         </div>
     
         </footer>
-    
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+        <script>
+            AOS.init();
+        </script>
+        
 </body>
 </html>
