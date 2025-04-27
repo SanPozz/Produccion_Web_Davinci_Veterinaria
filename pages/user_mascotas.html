@@ -10,38 +10,28 @@
 </head>
 <body class="h-screen flex">
 
-    <aside class="h-full w-[10%]">
-    
-        <nav class="flex flex-col bg-[#2B2D42] h-full w-full items-center justify-between">
-            <ul class="flex flex-col gap-y-10 pt-20 w-full items-center h-[80%]">
-                <li class="w-full text-center h-[12%] flex items-center justify-center">
-                    <a href="user_dashboard.html" class="text-[#EDF2F4] flex flex-col items-center justify-center gap-2 w-full bg-[#2B2D42] hover:brightness-160 transition-all duration-300">
-                        <i class="fa-solid fa-wrench text-3xl text-[#EDF2F4] mt-2"></i> 
-                        Dashboard
-                    </a>
-                </li>
-                <li class="w-full text-center h-[12%] flex items-center justify-center ">
-                    <a href="user_mascotas.html" class="text-[#EDF2F4] flex flex-col items-center justify-center gap-2 w-full bg-[#2B2D42] hover:brightness-160 transition-all duration-300">
-                        <i class="fa-solid fa-paw text-3xl text-[#EDF2F4] mt-2"></i> 
-                        Tus Mascotas
-                    </a>
-                </li>
-                <li class="w-full text-center h-[12%] flex items-center justify-center ">
-                    <a href="user_facturas.html" class="text-[#EDF2F4] flex flex-col items-center justify-center gap-2 w-full bg-[#2B2D42] hover:brightness-160 transition-all duration-300">
-                        <i class="fa-solid fa-receipt text-3xl text-[#EDF2F4] mt-2"></i> 
-                        Tus Facturas
-                    </a>
-                </li>
-            </ul>
-    
-            <div class="flex flex-col items-center justify-center w-full h-[20%]">
-                <a href="#" class="text-[#EDF2F4] flex flex-col items-center justify-center gap-2 w-full bg-[#2B2D42] hover:brightness-160 transition-all duration-300"><i class="fa-solid fa-user text-2xl text-[#EDF2F4] mt-2"></i>Cerrar Sesion</a>
-            </div>
+    <header class="fixed  top-0 max-md:right-0 left-0 md:w-[10%]">
+        <nav class="flex  md:flex-col md:h-[100vh] items-center justify-between text-center bg-[#EF233C] text-white md:border-r-2 md:border-[#7c8aa2]  border-b-2 border-[#7c8aa2]">
+            <a href="/pages/user_dashboard.html" class="flex flex-col py-4 hover:bg-[#f54562] w-full">
+                <i class="fa-solid fa-wrench text-2xl"></i>
+                Dashboard
+            </a>
+            <a href="/pages/user_mascotas.html" class="flex flex-col py-4 hover:bg-[#f54562] w-full ">
+                <i class="fa-solid fa-paw text-2xl"></i>
+                Mascotas
+            </a>
+            <a href="/pages/user_facturas.html" class="flex flex-col py-4 hover:bg-[#f54562] w-full ">
+                <i class="fa-solid fa-receipt text-2xl"></i>
+                Facturas
+            </a>
+            <a href="../index.html" class="flex flex-col py-4 hover:bg-[#f54562] w-full ">
+                <i class="fa-solid fa-right-from-bracket text-2xl"></i>
+                Exit
+            </a>
         </nav>
+    </header> 
 
-    </aside>    
-
-    <main class="h-full w-[90%] flex flex-col items-center bg-[#EDF2F4]">
+    <main class="w-full h-full md:ml-[15%] md:mr-[5%] mt-18 md:mt-0 text-center">
 
         <h1 class="text-4xl font-semibold text-[#2B2D42] border-b-4 border-[#2B2D42] border-rounded-2xl mb-6 mt-6 ">Tus Mascotas</h1>
 
@@ -49,9 +39,9 @@
             <article class="flex items-center justify-around bg-[#2B2D42] rounded-2xl w-[70vw] mb-12">
                 <img src="/assets/user_dashboard/dog.png" alt="Perro" class="w-[30%] ">
                 <div>
-                    <h2 class="text-2xl text-[#EDF2F4]">Mascota 1</h2>
-                    <p class="text-2xl text-[#EDF2F4]">Descripción de la mascota 1</p>
-                    <p class="text-2xl text-[#EDF2F4]">Raza: <span class="">Perro</span></p>
+                    <h2 class="text-xl lg:text-2xl text-[#EDF2F4]">Mascota 1</h2>
+                    <p class="text-xl lg:text-2xl text-[#EDF2F4]">Descripción de la mascota 1</p>
+                    <p class="text-xl lg:text-2xl text-[#EDF2F4]">Raza: <span class="">Perro</span></p>
                 </div>
 
             </article>
@@ -59,9 +49,9 @@
             <article class="flex items-center justify-around bg-[#2B2D42] rounded-2xl w-[70vw] mb-12">
                 <img src="/assets/user_dashboard/cat.png" alt="Gato" class="w-[30%]">
                 <div>
-                    <h2 class="text-2xl text-[#EDF2F4]">Mascota 2</h2>
-                    <p class="text-2xl text-[#EDF2F4]">Descripción de la mascota 2</p>
-                    <p class="text-2xl text-[#EDF2F4]">Raza: <span class="">Gato</span></p>
+                    <h2 class="text-xl lg:text-2xl text-[#EDF2F4]">Mascota 2</h2>
+                    <p class="text-xl lg:text-2xl text-[#EDF2F4]">Descripción de la mascota 2</p>
+                    <p class="text-xl lg:text-2xl text-[#EDF2F4]">Raza: <span class="">Gato</span></p>
                 </div>
 
             </article>
