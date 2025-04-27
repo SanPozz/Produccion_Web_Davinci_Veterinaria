@@ -1,45 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link rel="stylesheet" href="styles/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Huellitas - Panel de Administracion</title>
-</head>
-<body>
-
-    <header class="bg-[#EDF2F4] border-b-5 border-[#2B2D42]">
-
-
-        <div class=" relative mx-auto  flex  flex-col  sm:flex-row sm:items-center gap-4 py-4 max-w-screen-lg sm:justify-between">
-           <div class="flex items-center">
-            <a href="index.html"><img src="/assets/logo.png" alt="Logo Veterinaria Huellitas" class="w-12 h-12"></a>
-            <a href="index.html"><h1 class="text-3xl text-[#2B2D42]">Veterinaria Huellitas</h1></a>
-        </div>
-       
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        <link rel="stylesheet" href="styles/styles.css">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+            integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <title>Veterinaria Huellitas</title>
+    </head>
     
-       <input class="peer hidden" type="checkbox" id="navbar-open">
-       <label for="navbar-open" class="absolute right-0 mt-2 sm:hidden">
-       
-            <ion-icon name="menu" class="text-3xl cursor-pointer "></ion-icon>
-             
-       </label>
+    <body>
     
-   
-    <nav class=" peer-checked:block hidden sm:block">
-            <ul class="flex flex-col gap-y-4 sm:flex-row sm:gap-x-8">
-                <li class="md:hover:bg-[#EF233C] px-4 py-2 md:rounded-full"><a href="index.html" class="text-lg md:hover:text-white hover:text-[#ed808d]">Inicio</a></li>
-                <li class="md:hover:bg-[#EF233C] px-4 py-2 md:rounded-full"><a href="sobreNosotros.html" class="text-lg md:hover:text-white hover:text-[#ed808d]">Sobre Nosotros</a></li>
-                <li class="md:hover:bg-[#EF233C] px-4 py-2 md:rounded-full"><a href="servicios.html" class="text-lg md:hover:text-white hover:text-[#ed808d]">Servicios</a></li>
-                <li class="md:hover:bg-[#EF233C] px-4 py-2 md:rounded-full"><a href="sesion.html" class="text-lg md:hover:text-white  hover:text-[#ed808d]">Iniciar Sesion</a></li>
-            </ul>
-        
-        
-    </nav>
-</div>
-    </header>
+        <header class="mb-2 px-5 border-b-2">
+            <div class=" relative mx-auto  flex  flex-col  sm:flex-row sm:items-center gap-4 py-4 max-w-screen-lg sm:justify-between">
+                <div class="flex items-center">
+                    <a href="index.html"><img src="../assets/logo.png" alt="Logo Veterinaria Huellitas"
+                            class="w-12 h-12"></a>
+                    <a href="index.html">
+                        <h1 class="text-3xl text-[#2B2D42]">Veterinaria Huellitas</h1>
+                    </a>
+                </div>
+                <div class="bg-[#7c8aa2] p-2 rounded-3xl flex max-sm:w-[35%] text-[#EDF2F4] border-[#2B2D42] border-2">
+                      <div class="pr-2"><i class="fa-solid fa-circle-user "></i></div>
+                      <div class=""><p>Usuarionumero1</p></div>
+                </div>
+                <input class="peer hidden" type="checkbox" id="navbar-open">
+                <label for="navbar-open" class="absolute right-0 mt-2 sm:hidden">
+                    <ion-icon name="menu" class="text-3xl cursor-pointer "></ion-icon>
+                </label>
+                <nav class=" peer-checked:block hidden sm:block ">
+                    <ul class="flex flex-col gap-y-4 sm:flex-row sm:gap-x-8">
+    
+                        <li class=" px-4 py-2 md:rounded-full"><a href="sesion.html"
+                                class="text-lg md:after:content-[''] after:block after:w-0 after:h-0.5 after:bg-[#2B2D42] after:transition-all after:duration-300 hover:after:w-[70%] max-sm:hover:after:w-[18%]">Cerrar
+                                Sesion</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
 
     <main class="bg-[#EDF2F4] h-[100vh] flex items-center justify-center">
 
