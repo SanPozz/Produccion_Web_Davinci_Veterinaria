@@ -1,225 +1,289 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link rel="stylesheet" href="styles/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Tus Mascotas</title>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Veterinaria Huellitas</title>
 </head>
-<body class="lg:flex   lg:h-screen">
 
-    
-    
-        <nav class="flex lg:flex-col bg-[#EF233C] h-full w-full pt-5 pb-5 items-center  justify-between lg:w-[15%] xl:w-[12%]">
-            <ul class="flex lg:flex-col gap-y-10 lg:pt-20  w-full items-center h-[80%]">
-                <li class="w-full text-center h-[12%] flex items-center justify-center">
-                    <a href="admin_dashboard.html" class="text-[#EDF2F4] flex flex-col items-center justify-center gap-2 w-full bg-[#EF233C] hover:brightness-160 transition-all duration-300">
-                        <i class="fa-solid fa-wrench text-3xl text-[#EDF2F4] mt-2"></i> 
-                        Dashboard
-                    </a>
-                </li>
-                <li class="w-full text-center h-[12%] flex items-center justify-center ">
-                    <a href="admin_empleados.html" class="text-[#EDF2F4] flex flex-col items-center justify-center gap-2 w-full bg-[#EF233C] hover:brightness-160 transition-all duration-300">
-                        <i class="fa-solid fa-user-tie text-3xl text-[#EDF2F4] mt-2"></i>
-                        Empleados
-                    </a>
-                </li>
-                <li class="w-full text-center h-[12%] flex items-center justify-center ">
-                    <a href="admin_reportes.html" class="text-[#EDF2F4] flex flex-col items-center justify-center gap-2 w-full bg-[#EF233C] hover:brightness-160 transition-all duration-300">
-                        <i class="fa-solid fa-receipt text-3xl text-[#EDF2F4] mt-2"></i>
-                        Reportes
-                    </a>
-                </li>
-                <li class="w-full text-center h-[12%] flex items-center justify-center ">
-                    <a href="admin_reportes.html" class="text-[#EDF2F4] flex flex-col items-center justify-center gap-2 w-full bg-[#EF233C] hover:brightness-160 transition-all duration-300">
-                         <i class="fa-solid fa-users text-3xl text-[#EDF2F4] mt-2"></i>
-                        Usuarios
-                    </a>
-                </li>
-            </ul>
-    
-            <div class="flex lg:flex-col items-center justify-center md:w-full w-[40%] h-[20%]">
-                <a href="#" class="text-[#EDF2F4] flex flex-col items-center justify-center gap-2 w-full bg-[#EF233C] hover:brightness-160 transition-all duration-300"><i class="fa-solid fa-user text-2xl text-[#EDF2F4] mt-2"></i>Cerrar Sesion</a>
-            </div>
+<body class="flex max-sm:flex-col ">
+    <header class="fixed  top-0 max-md:right-0 left-0 md:w-[10%]">
+        <nav class="flex  md:flex-col md:h-[100vh] items-center justify-around text-center bg-[#EF233C] text-white md:border-r-2 md:border-[#7c8aa2]  border-b-2 border-[#7c8aa2]">
+            <a href="admin_dashboard.html" class="flex flex-col py-4 hover:bg-[#f54562] w-full">
+                <i class="fa-solid fa-wrench text-2xl"></i>
+                Dashboard
+            </a>
+            <a href="admin_empleados.html" class="flex flex-col py-4 hover:bg-[#f54562] w-full ">
+                <i class="fa-solid fa-user-tie text-2xl"></i>
+                Empleados
+            </a>
+            <a href="admin_usuarios.html" class="flex flex-col py-4 hover:bg-[#f54562] w-full">
+                <i class="fa-solid fa-users text-2xl"></i>
+                Usuarios
+            </a>
+            <a href="admin_reportes.html" class="flex flex-col py-4 hover:bg-[#f54562] w-full">
+                <i class="fa-solid fa-receipt text-2xl"></i>
+                Reportes
+            </a>
+            <a href="../index.html" class="flex flex-col py-4 hover:bg-[#f54562] w-full ">
+                <i class="fa-solid fa-right-from-bracket text-2xl"></i>
+                Exit
+            </a>
         </nav>
+    </header>
+    <main class="w-full h-full my-20 md:ml-[15%] md:mr-[5%] overflow-auto">
+        <h1 class="text-center mt-10 text-4xl">Usuarios</h1>
+        <div class="w-full mx-auto">
+            <div class="p-4 mt-10  w-100 w-full border-b-2 border-[#7c8aa2] md:rounded-tl-xl md:rounded-tr-xl p-4  border-slate-600 bg-slate-700 flex justify-center items-center max-sm:text-center">
+                <form class="text-sm max-sm:flex max-sm:flex-col">      
+                    <input type="hidden" name="buscar" >
+                    <select name="opcion" required class="bg-white p-1 ">
+                        <option value="usuario">Usuario</option>
+                        <option value="id">Id</option>
+                    </select>
+                    <input type="text" name="busquedaadad" require class="border-2 bg-white p-1 max-sm:w-[99%] my-2" placeholder="Ingresar busqueda">
+                    <input type="submit" value="Buscar" class="buscar bg-white p-1 border-2  cursor-pointer text-sm hover:opacity-90">
+                </form>
+            </div>
+           <div class="flex flex-col w-full  text-slate-300 bg-slate-800 shadow-md  bg-clip-border rounded-bl-xl   rounded-br-xl touch-auto overflow-auto" >
+               <table class="w-full text-left table-auto min-w-max" >
+                   <thead class="uppercase">
+                       <tr>
+                           <th class="p-4 border-b border-slate-600 bg-slate-700">
+                               <p class="text-sm font-normal leading-none text-slate-300">
+                                   dni
+                               </p>
+                           </th>
+                           <th class="p-4 border-b border-slate-600 bg-slate-700">
+                               <p class="text-sm font-normal leading-none text-slate-300">
+                                   nombre y apellido
+                               </p>
+                           </th>
+                           <th class="p-4 border-b border-slate-600 bg-slate-700">
+                               <p class="text-sm font-normal leading-none text-slate-300">
+                                   nro.telelefono
+                               </p>
+                           </th>
+                           <th class="p-4 border-b border-slate-600 bg-slate-700">
+                               <p class="text-sm font-normal leading-none text-slate-300">
+                                   mascota
+                               </p>
+                           </th>
+                           <th class="p-4 border-b border-slate-600 bg-slate-700">
+                            <p class="text-sm font-normal leading-none text-slate-300">
+                                Acciones
+                            </p>
+                        </th>
+                           
+                       </tr>
+                   </thead>
+        
+        
+                   <tbody>
+                       <tr class="hover:bg-slate-700 ">
+                           <td class="p-4 border-b border-slate-700 bg-slate-900">
+                               <p class="text-sm text-slate-100 font-semibold ">
+                                   39876543
+                               </p>
+                           </td>
+                           <td class="p-4 border-b border-slate-700 bg-slate-800 ">
+                               <p class="text-sm text-slate-300">
+                                   Pedro Pascal
+                               </p>
+                           </td>
+                           <td class="p-4 border-b border-slate-700 bg-slate-900">
+                               <p class="text-sm text-slate-300">
+                                   +54 011-8928-8162
+                               </p>
+                           </td>
+                           <td class="p-4 border-b border-slate-700 bg-slate-800">
+                               <p class="text-sm text-slate-300">
+                                   coco
+                               </p>
+                           </td>
+                           <td class="p-4 bg-slate-900 text-sm text-slate-300 flex gap-5 ">
+                            <a href="#" class="hover:text-blue-500 rounded-"><i class="fa-solid fa-user-plus"></i></a>
+                            <a href="#" class="hover:text-blue-500 rounded-"><i class="fa-solid fa-user-pen"></i></a>
+                             <a href="#" class="hover:text-blue-500"><i class="fa-solid fa-trash"></i></a>
+                        </td>
+                       </tr>
+        
+        
+                       <tr class="hover:bg-slate-700">
+                           <td class="p-4 border-b border-slate-700 bg-slate-900">
+                               <p class="text-sm text-slate-100 font-semibold">
+                                   58122872
+                               </p>
+                           </td>
+                           <td class="p-4 border-b border-slate-700 bg-slate-800">
+                               <p class="text-sm text-slate-300">
+                                   Claudio Gallo
+                               </p>
+                           </td>
+                           <td class="p-4 border-b border-slate-700 bg-slate-900">
+                               <p class="text-sm text-slate-300">
+                                +54 011-1453-8648
+                               </p>
+                           </td>
+                           <td class="p-4 border-b border-slate-700 bg-slate-800">
+                               <p class="text-sm text-slate-300">
+                                   Manchitas
+                               </p>
+                           </td>
+                           <td class="p-4 bg-slate-900 text-sm text-slate-300 flex gap-5 ">
+                            <a href="#" class="hover:text-blue-500 rounded-"><i class="fa-solid fa-user-plus"></i></a>
+                            <a href="#" class="hover:text-blue-500 rounded-"><i class="fa-solid fa-user-pen"></i></a>
+                             <a href="#" class="hover:text-blue-500"><i class="fa-solid fa-trash"></i></a>
+                        </td>
+                       </tr>
+                       <tr class="hover:bg-slate-700">
+                        <td class="p-4 border-b border-slate-700 bg-slate-900">
+                            <p class="text-sm text-slate-100 font-semibold">
+                                58122872
+                            </p>
+                        </td>
+                        <td class="p-4 border-b border-slate-700 bg-slate-800">
+                            <p class="text-sm text-slate-300">
+                                Claudio Gallo
+                            </p>
+                        </td>
+                        <td class="p-4 border-b border-slate-700 bg-slate-900">
+                            <p class="text-sm text-slate-300">
+                             +54 011-1453-8648
+                            </p>
+                        </td>
+                        <td class="p-4 border-b border-slate-700 bg-slate-800">
+                            <p class="text-sm text-slate-300">
+                                Manchitas
+                            </p>
+                        </td>
+                        <td class="p-4 bg-slate-900 text-sm text-slate-300 flex gap-5 ">
+                         <a href="#" class="hover:text-blue-500 rounded-"><i class="fa-solid fa-user-plus"></i></a>
+                         <a href="#" class="hover:text-blue-500 rounded-"><i class="fa-solid fa-user-pen"></i></a>
+                          <a href="#" class="hover:text-blue-500"><i class="fa-solid fa-trash"></i></a>
+                     </td>
+                    </tr>  <tr class="hover:bg-slate-700">
+                        <td class="p-4 border-b border-slate-700 bg-slate-900">
+                            <p class="text-sm text-slate-100 font-semibold">
+                                58122872
+                            </p>
+                        </td>
+                        <td class="p-4 border-b border-slate-700 bg-slate-800">
+                            <p class="text-sm text-slate-300">
+                                Claudio Gallo
+                            </p>
+                        </td>
+                        <td class="p-4 border-b border-slate-700 bg-slate-900">
+                            <p class="text-sm text-slate-300">
+                             +54 011-1453-8648
+                            </p>
+                        </td>
+                        <td class="p-4 border-b border-slate-700 bg-slate-800">
+                            <p class="text-sm text-slate-300">
+                                Manchitas
+                            </p>
+                        </td>
+                        <td class="p-4 bg-slate-900 text-sm text-slate-300 flex gap-5 ">
+                         <a href="#" class="hover:text-blue-500 rounded-"><i class="fa-solid fa-user-plus"></i></a>
+                         <a href="#" class="hover:text-blue-500 rounded-"><i class="fa-solid fa-user-pen"></i></a>
+                          <a href="#" class="hover:text-blue-500"><i class="fa-solid fa-trash"></i></a>
+                     </td>
+                    </tr>  <tr class="hover:bg-slate-700">
+                        <td class="p-4 border-b border-slate-700 bg-slate-900">
+                            <p class="text-sm text-slate-100 font-semibold">
+                                58122872
+                            </p>
+                        </td>
+                        <td class="p-4 border-b border-slate-700 bg-slate-800">
+                            <p class="text-sm text-slate-300">
+                                Claudio Gallo
+                            </p>
+                        </td>
+                        <td class="p-4 border-b border-slate-700 bg-slate-900">
+                            <p class="text-sm text-slate-300">
+                             +54 011-1453-8648
+                            </p>
+                        </td>
+                        <td class="p-4 border-b border-slate-700 bg-slate-800">
+                            <p class="text-sm text-slate-300">
+                                Manchitas
+                            </p>
+                        </td>
+                        <td class="p-4 bg-slate-900 text-sm text-slate-300 flex gap-5 ">
+                         <a href="#" class="hover:text-blue-500 rounded-"><i class="fa-solid fa-user-plus"></i></a>
+                         <a href="#" class="hover:text-blue-500 rounded-"><i class="fa-solid fa-user-pen"></i></a>
+                          <a href="#" class="hover:text-blue-500"><i class="fa-solid fa-trash"></i></a>
+                     </td>
+                    </tr>  <tr class="hover:bg-slate-700">
+                        <td class="p-4 border-b border-slate-700 bg-slate-900">
+                            <p class="text-sm text-slate-100 font-semibold">
+                                58122872
+                            </p>
+                        </td>
+                        <td class="p-4 border-b border-slate-700 bg-slate-800">
+                            <p class="text-sm text-slate-300">
+                                Claudio Gallo
+                            </p>
+                        </td>
+                        <td class="p-4 border-b border-slate-700 bg-slate-900">
+                            <p class="text-sm text-slate-300">
+                             +54 011-1453-8648
+                            </p>
+                        </td>
+                        <td class="p-4 border-b border-slate-700 bg-slate-800">
+                            <p class="text-sm text-slate-300">
+                                Manchitas
+                            </p>
+                        </td>
+                        <td class="p-4 bg-slate-900 text-sm text-slate-300 flex gap-5 ">
+                         <a href="#" class="hover:text-blue-500 rounded-"><i class="fa-solid fa-user-plus"></i></a>
+                         <a href="#" class="hover:text-blue-500 rounded-"><i class="fa-solid fa-user-pen"></i></a>
+                          <a href="#" class="hover:text-blue-500"><i class="fa-solid fa-trash"></i></a>
+                     </td>
+                    </tr>  <tr class="hover:bg-slate-700">
+                        <td class="p-4 border-b border-slate-700 bg-slate-900">
+                            <p class="text-sm text-slate-100 font-semibold">
+                                58122872
+                            </p>
+                        </td>
+                        <td class="p-4 border-b border-slate-700 bg-slate-800">
+                            <p class="text-sm text-slate-300">
+                                Claudio Gallo
+                            </p>
+                        </td>
+                        <td class="p-4 border-b border-slate-700 bg-slate-900">
+                            <p class="text-sm text-slate-300">
+                             +54 011-1453-8648
+                            </p>
+                        </td>
+                        <td class="p-4 border-b border-slate-700 bg-slate-800">
+                            <p class="text-sm text-slate-300">
+                                Manchitas
+                            </p>
+                        </td>
+                        <td class="p-4 bg-slate-900 text-sm text-slate-300 flex gap-5 ">
+                         <a href="#" class="hover:text-blue-500 rounded-"><i class="fa-solid fa-user-plus"></i></a>
+                         <a href="#" class="hover:text-blue-500 rounded-"><i class="fa-solid fa-user-pen"></i></a>
+                          <a href="#" class="hover:text-blue-500"><i class="fa-solid fa-trash"></i></a>
+                     </td>
+                    </tr>
+        
+                       
+                     
+                  
 
-    
-    
-    <main class="lg:w-[90%] h-full flex flex-col items-center justify-center">
-
-        <h1 class="text-4xl font-semibold text-[#2B2D42] border-b-4 border-[#2B2D42] border-rounded-2xl mb-6 mt-6 ">Usuarios</h1>
-
-
-       
-
-            <div class="w-full mx-auto px-20">
-                <div class="p-4 mt-10  w-100 w-full border-2 rounded-tl-lg rounded-tr-lg p-4 border-b border-slate-600 bg-slate-700 flex justify-center items-center max-sm:text-center">
-                    <form class="text-sm max-sm:flex max-sm:flex-col">      
-                        <input type="hidden" name="buscar" >
-                        <select name="opcion" required class="bg-white p-1 ">
-                            <option value="usuario">Usuario</option>
-                            <option value="id">Id</option>
-                        </select>
-                        <input type="text" name="busquedaadad" require class="border-2 bg-white p-1 max-sm:w-[99%] my-2" placeholder="Ingresar busqueda">
-                        <input type="submit" value="Buscar" class="buscar bg-white p-1 border-2  cursor-pointer text-sm hover:opacity-90">
-                    </form>
-                </div>
-               <div class="flex flex-col w-full  text-slate-300 bg-slate-800 shadow-md  bg-clip-border rounded-bl-xl  touch-auto overflow-auto">
-                   <table class="w-full text-left table-auto min-w-max rounded-tl-lg">
-                       <thead class="uppercase">
-                           <tr>
-                               <th class="p-4 border-b border-slate-600 bg-slate-700">
-                                   <p class="text-sm font-normal leading-none text-slate-300">
-                                       dni
-                                   </p>
-                               </th>
-                               <th class="p-4 border-b border-slate-600 bg-slate-700">
-                                   <p class="text-sm font-normal leading-none text-slate-300">
-                                       nombre y apellido
-                                   </p>
-                               </th>
-                               <th class="p-4 border-b border-slate-600 bg-slate-700">
-                                   <p class="text-sm font-normal leading-none text-slate-300">
-                                       nro.telefono
-                                   </p>
-                               </th>
-                               <th class="p-4 border-b border-slate-600 bg-slate-700">
-                                   <p class="text-sm font-normal leading-none text-slate-300">
-                                       mascota
-                                   </p>
-                               </th>
-                               <th class="p-4 border-b border-slate-600 bg-slate-700">
-                                <p class="text-sm font-normal leading-none text-slate-300">
-                                    Acciones
-                                </p>
-                            </th>
-                               
-                           </tr>
-                       </thead>
-            
-            
-                       <tbody>
-                           <tr class="hover:bg-slate-700">
-                               <td class="p-4 border-b border-slate-700 bg-slate-900">
-                                   <p class="text-sm text-slate-100 font-semibold">
-                                    8993084673
-                                   </p>
-                               </td>
-                               <td class="p-4 border-b border-slate-700 bg-slate-800">
-                                   <p class="text-sm text-slate-300">
-                                    Josu Frutos
-                                   </p>
-                               </td>
-                               <td class="p-4 border-b border-slate-700 bg-slate-900">
-                                   <p class="text-sm text-slate-300">
-                                    +56 (391) 684-3824
-                                   </p>
-                               </td>
-                               <td class="p-4 border-b border-slate-700 bg-slate-800">
-                                   <p class="text-sm text-slate-300">
-                                       Kiki
-                                   </p>
-                               </td>
-                               <td class="p-4 bg-slate-900 text-sm text-slate-300 flex gap-5 ">
-                                <a href="" class="hover:text-blue-500 rounded-"><i class="fa-solid fa-user-plus"></i></a>
-                                <a href="" class="hover:text-blue-500 rounded-"><i class="fa-solid fa-user-pen"></i></a>
-                                 <a href="" class="hover:text-blue-500"><i class="fa-solid fa-trash"></i></a>
-                            </td>
-                           </tr>
-            
-            
-                           <tr class="hover:bg-slate-700">
-                               <td class="p-4 border-b border-slate-700 bg-slate-900">
-                                   <p class="text-sm text-slate-100 font-semibold">
-                                    3313470194
-                                   </p>
-                               </td>
-                               <td class="p-4 border-b border-slate-700 bg-slate-800">
-                                   <p class="text-sm text-slate-300">
-                                    Rosario Boix
-                                   </p>
-                               </td>
-                               <td class="p-4 border-b border-slate-700 bg-slate-900">
-                                   <p class="text-sm text-slate-300">
-                                    +45 (371) 214-8421
-                                   </p>
-                               </td>
-                               <td class="p-4 border-b border-slate-700 bg-slate-800">
-                                   <p class="text-sm text-slate-300">
-                                      Pacha
-                                   </p>
-                               </td>
-                               <td class="p-4 bg-slate-900 text-sm text-slate-300 flex gap-5 ">
-                                <a href="" class="hover:text-blue-500 rounded-"><i class="fa-solid fa-user-plus"></i></a>
-                                <a href="" class="hover:text-blue-500 rounded-"><i class="fa-solid fa-user-pen"></i></a>
-                                 <a href="" class="hover:text-blue-500"><i class="fa-solid fa-trash"></i></a>
-                            </td>
-                           </tr>
-            
-            
-                           <tr class="hover:bg-slate-700">
-                               <td class="p-4 border-b border-slate-700 bg-slate-900">
-                                   <p class="text-sm text-slate-100 font-semibold">
-                                    5068430594
-                                   </p>
-                               </td>
-                               <td class="p-4 border-b border-slate-700 bg-slate-800">
-                                   <p class="text-sm text-slate-300">
-                                    Luna Bastida
-                                   </p>
-                               </td>
-                               <td class="p-4 border-b border-slate-700 bg-slate-900">
-                                   <p class="text-sm text-slate-300">
-                                    +28 (896) 290-2789
-                                   </p>
-                               </td>
-                               <td class="p-4 border-b border-slate-700 bg-slate-800">
-                                   <p class="text-sm text-slate-300">
-                                       coco
-                                   </p>
-                               </td>
-                               <td class="p-4 bg-slate-900 text-sm text-slate-300 flex gap-5 ">
-                                <a href="" class="hover:text-blue-500 rounded-"><i class="fa-solid fa-user-plus"></i></a>
-                                <a href="" class="hover:text-blue-500 rounded-"><i class="fa-solid fa-user-pen"></i></a>
-                                 <a href="" class="hover:text-blue-500"><i class="fa-solid fa-trash"></i></a>
-                            </td>
-            
-            
-                           </tr>
-                           <tr class="hover:bg-slate-700">
-                               <td class="p-4 bg-slate-900">
-                                   <p class="text-sm text-slate-100 font-semibold">
-                                    7646454185
-                                   </p>
-                               </td>
-                               <td class="p-4 bg-slate-800">
-                                   <p class="text-sm text-slate-300">
-                                    Izan Bosch
-                                   </p>
-                               </td>
-                               <td class="p-4 bg-slate-900">
-                                   <p class="text-sm text-slate-300">
-                                    +73 (032) 300-2675
-                                   </p>
-                               </td>
-                               <td class="p-4 bg-slate-800">
-                                   <p class="text-sm text-slate-300">
-                                    Max
-                                   </p>
-                               </td>
-                               <td class="p-4 bg-slate-900 text-sm text-slate-300 flex gap-5 ">
-                                <a href="" class="hover:text-blue-500 rounded-"><i class="fa-solid fa-user-plus"></i></a>
-                                <a href="" class="hover:text-blue-500 rounded-"><i class="fa-solid fa-user-pen"></i></a>
-                                 <a href="" class="hover:text-blue-500"><i class="fa-solid fa-trash"></i></a>
-                            </td>
-                           </tr>
-                       </tbody>
-                   </table>
-                   </div> 
-                </div>
+                   </tbody>
+               </table>
+               </div> 
+            </div>
     </main>
-
 </body>
-</html>
