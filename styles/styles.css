@@ -5,3 +5,9 @@
     font-family: 'Prompt', sans-serif;
 }
 
+#perroIndex{
+    mask-image: linear-gradient(
+        black 75%,
+        transparent
+    );
+}
