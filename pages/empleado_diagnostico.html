@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Veterinaria Huellitas</title>
+</head>
+
+<body class="flex max-sm:flex-col ">
+    <header class="fixed  top-0 max-md:right-0 left-0 md:w-[10%]">
+        <nav class="flex  md:flex-col md:h-[100vh] items-center justify-around text-center bg-[#7C8AA2] text-white md:border-r-2 md:border-[#7c8aa2]  border-b-2 border-[#7c8aa2]">
+            <a href="empleado_dashboard.html" class="flex flex-col py-4 hover:bg-[#888e99]  transition-all duration-300 w-full">
+                <i class="fa-solid fa-wrench text-2xl"></i>
+                Dashboard
+            </a>
+            <a href="empleado_mascotas.html" class="flex flex-col py-4 hover:bg-[#888e99]  transition-all duration-300 w-full ">
+                 <i class="fa-solid fa-paw text-2xl"></i> 
+                Mascotas
+            </a>
+            <a href="empleado_diagnostico.html" class="flex flex-col py-4 hover:bg-[#888e99]  transition-all duration-300 w-full">
+                <i class="fa-solid fa-stethoscope text-2xl"></i> 
+                Diagnosticos
+            </a>
+            <a href="empleado_facturacion.html" class="flex flex-col py-4 hover:bg-[#888e99]  transition-all duration-300 w-full">
+                <i class="fa-solid fa-receipt text-2xl"></i>
+                Facturas
+            </a>
+            <a href="index.html" class="flex flex-col py-4 hover:bg-[#888e99]  transition-all duration-300 w-full">
+                <i class="fa-solid fa-right-from-bracket text-2xl"></i>
+                Exit
+            </a>
+        </nav>
+    </header>
+    <main class="w-full h-full my-20 md:ml-[15%] md:mr-[5%] overflow-auto">
+        <h1 class="text-center mt-10 text-4xl">Diagnosticos</h1>
+        <div class="w-full mx-auto">
+            <div class="p-4 mt-10  w-100 w-full border-b-2 border-[#7c8aa2] md:rounded-tl-xl md:rounded-tr-xl p-4  border-slate-600 bg-slate-700 flex justify-center items-center max-sm:text-center">
+                <form class="text-sm max-sm:flex max-sm:flex-col">      
+                    <input type="hidden" name="buscar" >
+                    <select name="opcion" required class="bg-white p-1 ">
+                        <option value="id">Id</option>
+                        <option value="mascota">Mascota</option>
+                    </select>
+                    <input type="text" name="busquedaadad" require class="border-2 bg-white p-1 max-sm:w-[99%] my-2" placeholder="Ingresar busqueda">
+                    <input type="submit" value="Buscar" class="buscar bg-white p-1 border-2  cursor-pointer text-sm hover:opacity-90">
+                </form>
+            </div>
+           <div class="flex flex-col w-full  text-slate-300 bg-slate-800 shadow-md  bg-clip-border rounded-bl-xl   rounded-br-xl touch-auto overflow-auto">
+               <table class="w-full text-left table-auto min-w-max  ">
+                   <thead class="uppercase">
+                       <tr>
+                           <th class="p-4 border-b border-slate-600 bg-slate-700">
+                               <p class="text-sm font-normal leading-none text-slate-300">
+                                   id
+                               </p>
+                           </th>
+                           <th class="p-4 border-b border-slate-600 bg-slate-700">
+                               <p class="text-sm font-normal leading-none text-slate-300">
+                                   mascota
+                               </p>
+                           </th>
+                           <th class="p-4 border-b border-slate-600 bg-slate-700">
+                               <p class="text-sm font-normal leading-none text-slate-300">
+                                   titulo
+                               </p>
+                           </th>
+                           <th class="p-4 border-b border-slate-600 bg-slate-700">
+                               <p class="text-sm font-normal leading-none text-slate-300">
+                                   descripcion
+                               </p>
+                           </th>
+                           <th class="p-4 border-b border-slate-600 bg-slate-700">
+                            <p class="text-sm font-normal leading-none text-slate-300">
+                                fecha
+                            </p>
+                        </th>
+                        <th class="p-4 border-b border-slate-600 bg-slate-700">
+                            <p class="text-sm font-normal leading-none text-slate-300">
+                                dueño
+                            </p>
+                        </th>
+                           <th class="p-4 border-b border-slate-600 bg-slate-700">
+                            <p class="text-sm font-normal leading-none text-slate-300">
+                                Acciones
+                            </p>
+                        </th>
+                           
+                       </tr>
+                   </thead>
+        
+        
+                   <tbody>
+                       <tr class="hover:bg-slate-700">
+                           <td class="p-4 border-b border-slate-700 bg-slate-900">
+                               <p class="text-sm text-slate-100 font-semibold">
+                                   76846
+                               </p>
+                           </td>
+                           <td class="p-4 border-b border-slate-700 bg-slate-800">
+                               <p class="text-sm text-slate-300">
+                                   Usuario1
+                               </p>
+                           </td>
+                           <td class="p-4 border-b border-slate-700 bg-slate-900">
+                               <p class="text-sm text-slate-300">
+                                   correodemuestra@mail.com
+                               </p>
+                           </td>
+                           <td class="p-4 border-b border-slate-700 bg-slate-800">
+                               <p class="text-sm text-slate-300">
+                                   veterinario
+                               </p>
+                           </td>
+                           <td class="p-4 border-b border-slate-700 bg-slate-900">
+                            <p class="text-sm text-slate-300">
+                             correodemuestra@mail.com
+                            </p>
+                        </td>
+                        <td class="p-4 border-b border-slate-700 bg-slate-800">
+                            <p class="text-sm text-slate-300">
+                                veterinario
+                            </p>
+                        </td>
+                           <td class="p-4 bg-slate-900 text-sm text-slate-300 flex gap-5 ">
+                            <a href="#" class="hover:text-blue-500 rounded-"><i class="fa-solid fa-file-circle-plus"></i></a>
+                             <a href="#" class="hover:text-blue-500"><i class="fa-solid fa-trash"></i></a>
+                        </td>
+                       </tr>
+        
+        
+                       <tr class="hover:bg-slate-700">
+                           <td class="p-4 border-b border-slate-700 bg-slate-900">
+                               <p class="text-sm text-slate-100 font-semibold">
+                                   58122
+                               </p>
+                           </td>
+                           <td class="p-4 border-b border-slate-700 bg-slate-800">
+                               <p class="text-sm text-slate-300">
+                                   Usuario2
+                               </p>
+                           </td>
+                           <td class="p-4 border-b border-slate-700 bg-slate-900">
+                               <p class="text-sm text-slate-300">
+                                correodemuestra@mail.com
+                               </p>
+                           </td>
+                           <td class="p-4 border-b border-slate-700 bg-slate-800">
+                               <p class="text-sm text-slate-300">
+                                   veterinario
+                               </p>
+                           </td>
+                           <td class="p-4 border-b border-slate-700 bg-slate-900">
+                            <p class="text-sm text-slate-300">
+                             correodemuestra@mail.com
+                            </p>
+                        </td>
+                        <td class="p-4 border-b border-slate-700 bg-slate-800">
+                            <p class="text-sm text-slate-300">
+                                veterinario
+                            </p>
+                        </td>
+                           <td class="p-4 bg-slate-900 text-sm text-slate-300 flex gap-5 ">
+                            <a href="#" class="hover:text-blue-500 rounded-"><i class="fa-solid fa-file-circle-plus"></i></a>
+                             <a href="#" class="hover:text-blue-500"><i class="fa-solid fa-trash"></i></a>
+                        </td>
+                       </tr>
+        
+        
+                       <tr class="hover:bg-slate-700">
+                           <td class="p-4 border-b border-slate-700 bg-slate-900">
+                               <p class="text-sm text-slate-100 font-semibold">
+                                  34682
+                               </p>
+                           </td>
+                           <td class="p-4 border-b border-slate-700 bg-slate-800">
+                               <p class="text-sm text-slate-300">
+                                Usuario3
+                               </p>
+                           </td>
+                           <td class="p-4 border-b border-slate-700 bg-slate-900">
+                               <p class="text-sm text-slate-300">
+                                correodemuestra@mail.com
+                               </p>
+                           </td>
+                           <td class="p-4 border-b border-slate-700 bg-slate-800">
+                               <p class="text-sm text-slate-300">
+                                   Atencion al cliente
+                               </p>
+                           </td>
+                           <td class="p-4 border-b border-slate-700 bg-slate-900">
+                            <p class="text-sm text-slate-300">
+                             correodemuestra@mail.com
+                            </p>
+                        </td>
+                        <td class="p-4 border-b border-slate-700 bg-slate-800">
+                            <p class="text-sm text-slate-300">
+                                veterinario
+                            </p>
+                        </td>
+                           <td class="p-4 bg-slate-900 text-sm text-slate-300 flex gap-5 ">
+                            <a href="#" class="hover:text-blue-500 rounded-"><i class="fa-solid fa-file-circle-plus"></i></a>
+                             <a href="#" class="hover:text-blue-500"><i class="fa-solid fa-trash"></i></a>
+                        </td>
+        
+        
+                       </tr>
+                       <tr class="hover:bg-slate-700">
+                           <td class="p-4 bg-slate-900">
+                               <p class="text-sm text-slate-100 font-semibold">
+                                   15437
+                               </p>
+                           </td>
+                           <td class="p-4 bg-slate-800">
+                               <p class="text-sm text-slate-300">
+                                Usuario4
+                               </p>
+                           </td>
+                           <td class="p-4 bg-slate-900">
+                               <p class="text-sm text-slate-300">
+                                correodemuestra@mail.com
+                               </p>
+                           </td>
+                           <td class="p-4 bg-slate-800">
+                               <p class="text-sm text-slate-300">
+                                Transportista
+                               </p>
+                           </td>
+                           <td class="p-4 border-b border-slate-700 bg-slate-900">
+                            <p class="text-sm text-slate-300">
+                             correodemuestra@mail.com
+                            </p>
+                        </td>
+                        <td class="p-4 border-b border-slate-700 bg-slate-800">
+                            <p class="text-sm text-slate-300">
+                                veterinario
+                            </p>
+                        </td>
+                           <td class="p-4 bg-slate-900 text-sm text-slate-300 flex gap-5 ">
+                            <a href="#" class="hover:text-blue-500 rounded-"><i class="fa-solid fa-file-circle-plus"></i></a>
+                             <a href="#" class="hover:text-blue-500"><i class="fa-solid fa-trash"></i></a>
+                        </td>
+                       </tr>
+                     
+                  
+
+                   </tbody>
+               </table>
+               </div> 
+            </div>
+    </main>
+</body>

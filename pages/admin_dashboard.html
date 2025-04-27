@@ -1,123 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    <link rel="stylesheet" href="styles/styles.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Veterinaria Huellitas</title>
-</head>
-
-<body>
-
-    <header class="mb-2 px-5 border-b-2">
-        <div class=" relative mx-auto  flex  flex-col  sm:flex-row sm:items-center gap-4 py-4 max-w-screen-lg sm:justify-between">
-            <div class="flex items-center">
-                <a href="index.html"><img src="../assets/logo.png" alt="Logo Veterinaria Huellitas"
-                        class="w-12 h-12"></a>
-                <a href="index.html">
-                    <h1 class="text-3xl text-[#2B2D42]">Veterinaria Huellitas</h1>
-                </a>
-            </div>
-            <div class="bg-[#7c8aa2] p-2 rounded-3xl flex max-sm:w-[35%] text-[#EDF2F4] border-[#2B2D42] border-2">
-                  <div class="pr-2"><i class="fa-solid fa-circle-user "></i></div>
-                  <div class=""><p>Usuarionumero1</p></div>
-            </div>
-            <input class="peer hidden" type="checkbox" id="navbar-open">
-            <label for="navbar-open" class="absolute right-0 mt-2 sm:hidden">
-                <ion-icon name="menu" class="text-3xl cursor-pointer "></ion-icon>
-            </label>
-            <nav class=" peer-checked:block hidden sm:block ">
-                <ul class="flex flex-col gap-y-4 sm:flex-row sm:gap-x-8">
-
-                    <li class=" px-4 py-2 md:rounded-full"><a href="sesion.html"
-                            class="text-lg md:after:content-[''] after:block after:w-0 after:h-0.5 after:bg-[#2B2D42] after:transition-all after:duration-300 hover:after:w-[70%] max-sm:hover:after:w-[18%]">Cerrar
-                            Sesion</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-
-
-    <main class="bg-[#EDF2F4] h-[100vh] flex items-center justify-center">
-
-        <section class="bg-[#EF233C] w-full h-[50%] flex justify-center relative">
-
-            <div class="flex flex-row  items-center justify-between w-3/4">
-                <div class="flex flex-col-reverse items-center group">
-                    <a href="/pages/user_mascotas.html"
-                        class=" text-2xl text-[#2B2D42] bg-[#EDF2F4] mt-4 p-3 rounded-xl peer hover:text-[#EDF2F4] hover:bg-[#2B2D42] mt-10 transition-all duration-400">Tus
-                        Mascotas</a>
-
-                    <!-- El elemento que cambia va después -->
-                    <i
-                        class="fa-solid fa-paw text-7xl text-[#EDF2F4] peer-hover:text-[#2B2D42] transition-all ease-in-out duration-400"></i>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        <link rel="stylesheet" href="styles/styles.css">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+            integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <title>Veterinaria Huellitas</title>
+    </head>
+    
+    <body>
+    
+        <header class="mb-2 px-5 border-b-2">
+            <div class=" relative mx-auto  flex  flex-col  sm:flex-row sm:items-center gap-4 py-4 max-w-screen-lg sm:justify-between">
+                <div class="flex items-center">
+                    <a href="index.html"><img src="../assets/logo.png" alt="Logo Veterinaria Huellitas"
+                            class="w-12 h-12"></a>
+                    <a href="index.html">
+                        <h1 class="text-3xl text-[#2B2D42]">Veterinaria Huellitas</h1>
+                    </a>
                 </div>
-
-                <div class="flex flex-col-reverse items-center group">
-                    <a href="/pages/user_facturas.html"
-                        class=" text-2xl text-[#2B2D42] bg-[#EDF2F4] mt-4 p-3 rounded-xl peer hover:text-[#EDF2F4] hover:bg-[#2B2D42] mt-10 transition-all duration-400">Tus
-                        Facturas</a>
-
-                    <!-- El elemento que cambia va después -->
-                    <i
-                        class="fa-solid fa-receipt text-7xl text-[#EDF2F4] peer-hover:text-[#2B2D42] transition-all ease-in-out duration-400"></i>
+                <div class="bg-[#EF233C] p-2 rounded-3xl flex max-sm:w-[35%] text-[#EDF2F4] border-[#2B2D42] border-2">
+                      <div class="pr-2"><i class="fa-solid fa-circle-user "></i></div>
+                      <div class=""><p>Administrador1</p></div>
                 </div>
+                <input class="peer hidden" type="checkbox" id="navbar-open">
+                <label for="navbar-open" class="absolute right-0 mt-2 sm:hidden">
+                    <ion-icon name="menu" class="text-3xl cursor-pointer "></ion-icon>
+                </label>
+                <nav class=" peer-checked:block hidden sm:block ">
+                    <ul class="flex flex-col gap-y-4 sm:flex-row sm:gap-x-8">
+    
+                        <li class=" px-4 py-2 md:rounded-full"><a href="index.html"
+                                class="text-lg md:after:content-[''] after:block after:w-0 after:h-0.5 after:bg-[#2B2D42] after:transition-all after:duration-300 hover:after:w-[70%] max-sm:hover:after:w-[18%]">Cerrar
+                                Sesion</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
 
+    <main class="bg-[#EDF2F4] h-[100vh] flex flex-col items-center justify-center max-sm:mb-42 max-sm:mt-30">
+        <section class="text-5xl text-center my-20  flex flex-col gap-y-4">
+             <h1 >Bienvenido</h1>
+             <p>Usuario "Aministrador1234"!!</p>
+             <p>¿Que desea hacer?</p>
+        </section>
+        <section class="bg-[#EF233C] w-full max-sm:h-200 h-[50%] flex justify-center relative ">
+  
+            <div class="flex flex-row  items-center justify-between w-3/4 grid max-sm:grid-cols-1 grid-cols-3 py-20 gap-y-5">
+                
+                <div class="flex flex-col-reverse items-center group ">
+                    <a href="/pages/admin_reportes.html" class=" text-2xl text-[#2B2D42] bg-[#EDF2F4] mt-4 p-3 rounded-xl peer hover:text-[#EDF2F4] hover:bg-[#2B2D42] mt-10 transition-all duration-400">Reportes</a>
+
+
+                    <i class="fa-solid fa-receipt text-7xl text-[#EDF2F4] peer-hover:text-[#2B2D42] transition-all ease-in-out duration-400"></i>
+                </div>
+                <div class="flex flex-col-reverse items-center group">
+                    <a href="/pages/admin_empleados.html" class=" text-2xl text-[#2B2D42] bg-[#EDF2F4] mt-4 p-3 rounded-xl peer hover:text-[#EDF2F4] hover:bg-[#2B2D42] mt-10 transition-all duration-400">Empleados</a>
+
+
+                    
+                    <i class="fa-solid fa-user-tie text-7xl text-[#EDF2F4] peer-hover:text-[#2B2D42] transition-all ease-in-out duration-400"></i>
+                </div>
+                <div class="flex flex-col-reverse items-center group">
+                    <a href="/pages/admin_usuarios.html" class=" text-2xl text-[#2B2D42] bg-[#EDF2F4] mt-4 p-3 rounded-xl peer hover:text-[#EDF2F4] hover:bg-[#2B2D42] mt-10 transition-all duration-400">Usuarios</a>
+
+                    <i class="fa-solid fa-users text-7xl text-[#EDF2F4] peer-hover:text-[#2B2D42] transition-all ease-in-out duration-400"></i>
+                    
+                </div>
             </div>
 
-            <img src="/assets/user_dashboard/vecteezy_young-veterinarian-smiles-radiantly-while-caring-for-a_53134056.png"
-                alt="Veterniaria con perro" class=" h-[170%] pb-10 absolute bottom-[-30%]">
+            
 
         </section>
 
     </main>
 
-    <footer
-        class="bg-[#2B2D42] h-[30vh] flex items-center justify-around flex-wrap max-md:h-[40vh] max-sm:flex-wrap-reverse">
+    <footer class="h-[20vh]">
 
-        <div class="flex items-center justify-center">
-            <img src="../assets/logo.png" alt="Logo Veterinaria Huellitas" class="w-12 h-12 mr-5">
-            <p class="text-white">&#169 2025. Todos los derechos reservados | </p>
+        <div class="w-full h-full flex items-center justify-between bg-[#2B2D42]">
+            <div class="w-full flex items-center justify-between">
+    
+                <div class="ml-6">
+        
+                    <ul class="flex flex-col gap-y-3 text-[#EDF2F4]">
+                        <li class=""><a href="index.html" class="hover:text-[#EF233C] transition-all">Inicio</a></li>
+                        <li class=""><a href="sobreNosotros.html" class="hover:text-[#EF233C] transition-all">Sobre Nosotros</a></li>
+                        <li class=""><a href="servicios.html" class="hover:text-[#EF233C] transition-all">Servicios</a></li>
+                        <li class=""><a href="sesion.html" class="hover:text-[#EF233C] transition-all">Iniciar Sesion</a></li>
+                    </ul>
+    
+                </div>
+            </div>
+
+            <div>
+                <ul class="flex flex-row gap-x-4 mr-4">
+                    <li class="text-[#EDF2F4] "><a href="facebook.com" target="_blank"><i class="fa-brands fa-facebook text-5xl text-[#EDF2F4] hover:text-[#EF233C] transition-all"></i></a> </li>
+                    <li class="text-[#EDF2F4]"><a href="instagram.com" target="_blank"><i class="fa-brands fa-instagram text-5xl text-[#EDF2F4] hover:text-[#EF233C] transition-all"></i></a></li>
+                    <li class="text-[#EDF2F4]"><a href="whatsapp.com" target="_blank"><i class="fa-brands fa-whatsapp text-5xl text-[#EDF2F4] hover:text-[#EF233C] transition-all"></i></a></li>
+                </ul>
+            </div>
+
         </div>
 
-        <div class="text-white ">
-            <h4 class="text-[#EF233C]">Contacto</h4>
-            <ul class="text-sm">
-                <li class="pb-1">Atención Teléfonica:</li>
-                <li class="pb-3"><a href="#" class="hover:text-[#EF233C]">0810-222-1212</a></li>
-                <li class="pb-1">Atención Whatsapp:</li>
-                <li class="pb-3"><a href="#" class="hover:text-[#EF233C]">+54-911-2121-2222</a></li>
-                <li class="pb-1">Lunes a Sábados de 9 a 21 hs</li>
-                <li>Domingos de 10 a 20 hs</li>
-            </ul>
-        </div>
-
-        <div class="text-white">
-            <h4 class="text-[#EF233C] pb-3">Redes sociales</h4>
-            <ul class="text-2xl flex items-center  justify-center  gap-x-4">
-                <li class=""><a href="#" class="hover:text-[#EF233C]"><i class="fa-brands fa-facebook"></i></a></li>
-                <li class=""><a href="#" class="hover:text-[#EF233C]"><i class="fa-brands fa-instagram"></i></a></li>
-                <li class=""><a href="#" class="hover:text-[#EF233C]"><i class="fa-brands fa-square-x-twitter"></i></a>
-                </li>
-            </ul>
+        <div class="w-full bg-[#2B2D42] border-t-4 border-[#EDF2F4] text-center p-4 text-[#EDF2F4] text-xl">
+            Veterinaria Huellitas - Todos los derechos reservados © 2025
         </div>
 
     </footer>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
-    <script>
-        AOS.init();
-    </script>
-
+    
 </body>
-
 </html>
