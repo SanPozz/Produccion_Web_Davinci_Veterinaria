@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="styles/styles.css">
     <title>Veterinaria Huellitas</title>
 </head>
-<body>
+<body class="w-full">
 
     <header class="mb-2">
 
@@ -30,11 +30,14 @@
        </label>
     
    
-    <nav class=" peer-checked:block hidden sm:block text-[#EF233C]">
-            <ul class="flex flex-col gap-y-4 sm:flex-row sm:gap-x-8 pl-5">
-                <li class=" "><a href="index.html" class="text-lg">Inicio</a></li>
-                <li class=" "><a href="#nosotros" class="text-lg">Sobre Nosotros</a></li>
-                <li class="  "><a href="#servicios" class="text-lg">Servicios</a></li>
+
+    <nav class=" peer-checked:block hidden sm:block">
+            <ul class="flex flex-col gap-y-4 sm:flex-row sm:gap-x-8">
+                <li class=" px-4 py-2 md:rounded-full"><a href="index.html" class="text-lg md:after:content-[''] after:block after:w-0 after:h-0.5 after:bg-[#2B2D42] after:transition-all after:duration-300 hover:after:w-[70%]">Inicio</a></li>
+                <li class=" px-4 py-2 md:rounded-full"><a href="sobreNosotros.html" class="text-lg md:after:content-[''] after:block after:w-0 after:h-0.5 after:bg-[#2B2D42] after:transition-all after:duration-300 hover:after:w-[70%]">Sobre Nosotros</a></li>
+                <li class=" px-4 py-2 md:rounded-full"><a href="servicios.html" class="text-lg md:after:content-[''] after:block after:w-0 after:h-0.5 after:bg-[#2B2D42] after:transition-all after:duration-300 hover:after:w-[70%]">Servicios</a></li>
+                <li class=" px-4 py-2 md:rounded-full"><a href="sesion.html" class="text-lg md:after:content-[''] after:block after:w-0 after:h-0.5 after:bg-[#2B2D42] after:transition-all after:duration-300 hover:after:w-[70%]">Iniciar Sesion</a></li>
+
             </ul>
         
         
@@ -42,44 +45,33 @@
 </div>
     </header>
    
-    <main class="bg-[#EF233C] h-[76vh] flex w-full items-center justify-center">
-        
-
-        <div class="w-1/3 lg:h-[70%] xl:h-[50%] ml-40 flex flex-col items-center rounded-3xl">
-
-            <h2 class="text-4xl text-[#EDF2F4] mb-4 border-[#2B2D42] border-b-4 border-rounded-2xl pb-2 text-center">Iniciar Sesión</h2>
+    <main class="bg-[#EF233C] h-[95vh] flex items-center justify-center flex flex-col-reverse border-b-50 border-[#2B2D42] sm:h-[110vh] md:h-[80vh] md:flex-row sm:p-5 xl:p-10">
 
 
-            <form action="" class="flex flex-col items-center p-4 mt-5" >
-                <input type="text" name="username" id="username" class="w-80 h-10 bg-[#EDF2F4] rounded-md p-2 focus:outline-[#2B2D42] focus:outline-2" placeholder="Usuario">
-                <input type="password" name="password" id="password" class="w-80 h-10 bg-[#EDF2F4] rounded-md mt-4 p-2 focus:outline-[#2B2D42] focus:outline-2" placeholder="Contraseña">
-                <input type="submit" value="Ingresar" class="w-70 h-10 bg-[#EDF2F4] rounded-md mt-8 cursor-pointer hover:bg-[#2B2D42] hover:text-[#EDF2F4] transition-all duration-250 ease-in-out">
-            </form>
-            <div class="relative mt-4 m-auto">
-                
-                <a href="registro.html" class="text-[#EDF2F4] text-xl before:content-[''] before:absolute before:top-7 before:w-0 before:h-0 before:border-t-2 before:border-[#2B2D42] before:transition-all before:duration-250 hover:before:w-full before:ease-in-out before:cursor-pointer before:border-b-2 border-rounded-2xl">Aun no tienes cuenta? Registrate</a>
+        <div class="h-[30%] flex flex-col items-center justify-center sm:w-2/5 ">
+
+            <h2 class="text-3xl text-center mb-10 text-[#EDF2F4]">¿Todavia no ingresaste a nuestro sistema?</h2>
+
+            <div class="flex gap-7">
+                <a href="" class="bg-[#2B2D42] text-[#EDF2F4] p-4 rounded-lg text-xl sm:text-center sm:p-0 sm:flex sm:items-center ">Iniciar Sesion</a>
+                <a href="" class="bg-[#EDF2F4] p-4 rounded-lg text-[#2B2D42] text-xl sm:text-center">Registrarse</a>
             </div>
+
         </div>
 
-        <div class="h-full flex justify-end mr-8 w-2/3">
-            <img src="assets/gato.png" alt="Gato" class="scale-x-[-1] absolute xl:right-100 xl:bottom-25 lg:right-70 lg:bottom-16 h-[90%]">
-            <img src="assets/perro.png" alt="Perro Cachorro" class="h-full absolute xl:top-53 lg:top-35 z-11" >
+        <div class="sm:w-3/5 xl:w-1/2 xl:p-7 2xl:p-22">
+            <img src="assets/perroIndex.png" alt="Perro Golden Retriever" id="perroIndex" class="" >
+
         </div>
 
     </main>
 
-    <div class="relative bg-[#2B2D42] h-[12vh] z-10">
+    <section class="p-2 mt-5 sm:p-10 md:flex items-center" data-aos="fade-right" id="nosotros">
 
-    </div>
+        <div class="flex flex-col mb-4 md:w-1/2 md:p-4">
+            <h3 class="text-3xl mx-auto mb-4 text-pretty underline">¿Quienes Somos?</h3>
 
-
-
-    <section class="bg-[#EDF2F4] lg:h-[100vh] xl:h-[80vh] flex items-center justify-around" data-aos="fade-right" id="nosotros">
-
-        <div class="w-1/3 h-full flex flex-col items-center justify-center">
-            <h3 class="text-2xl text-[#2B2D42] border-b-2 border-[#2B2D42] border-rounded-2xl m-8">¿Quienes Somos?</h3>
-
-            <div class="mt-4 text-pretty text-[#2B2D42] mb-10">
+            <div class="text-pretty text-[#2B2D42]">
                 <p>
                     En Huellitas, cuidamos a tus mascotas con la misma dedicación y amor con que vos lo hacés. Somos un equipo de profesionales comprometidos con la salud y el bienestar animal, que combina experiencia clínica con un trato cálido y humano.
                 </p>
@@ -96,72 +88,66 @@
 
 
 
-        <div class="w-1/3 h-[40%] bg-[#2B2D42] rounded-3xl pr-8 pt-8 relative ">
-            <video src="assets/5586226-coll-wavebreak-holding-1920x1080_QfQvVD02.mp4" autoplay muted loop class="rounded-3xl absolute top-10 right-10"></video>
+
+        <div class="flex items-center justify-center w-full mt-10 md:w-1/2">
+            <div class="flex items-center justify-center bg-[#2B2D42] w-[90%] rounded-xl">
+                <video src="assets/5586226-coll-wavebreak-holding-1920x1080_QfQvVD02.mp4" autoplay muted loop class="pr-4 pt-4 sm:pr-8 sm:pt-8 sm:rounded-3xl"></video>                
+            </div>
+
         </div>
 
     </section>
 
-    <section id="servicios" class="bg-[#EF233C] h-[80vh] flex flex-col items-center justify-center max-sm:h-[180vh] max-lg:h-[100vh] ">
+    <section id="servicios" class="mt-10 bg-[#EF233C] flex flex-col items-center justify-center p-3 md:p-10" >
 
-        <h4 class="text-2xl text-[#EDF2F4] border-b-2 border-[#EDF2F4] border-rounded-2xl mb-12 ">Nuestros Servicios</h4>
+
+        <h4 class="text-[#EDF2F4] text-3xl border-b-2 border-[#EDF2F4] mb-4">Nuestros Servicios</h4>
         
+        <div class="flex flex-col items-center justify-center" data-aos="fade-up">
 
-        <div class="w-3/4 flex items-center justify-center">
-
-            <ul class="grid grid-cols-3 gap-x-20 gap-y-10 max-sm:grid-cols-1 max-lg:grid-cols-2">
-                <li class="cursor-pointer h-[20vh] w-[20vh] bg-[#EDF2F4] rounded-xl text-center flex flex-col items-center justify-center transition delay-100 duration-150 ease-in-out hover:-translate-y-1 hover:scale-110 hover:opacity-90">
-                    <i class="fa-solid fa-syringe text-4xl text-[#2B2D42] p-2"></i><p class="text-[#2B2D42] text-center">Vacunacion</p>
-                </li>
-                <li class="cursor-pointer h-[20vh] w-[20vh] bg-[#EDF2F4] rounded-xl text-center flex flex-col items-center justify-center transition delay-100 duration-150 ease-in-out hover:-translate-y-1 hover:scale-110 hover:opacity-90">
-                    <i class="fa-solid fa-house-chimney-medical text-4xl text-[#2B2D42] p-2"></i><p class="text-[#2B2D42] text-center">Consulta Medica</p>
-                </li>
-                <li class="cursor-pointer h-[20vh] w-[20vh] bg-[#EDF2F4] rounded-xl text-center flex flex-col items-center justify-center transition delay-100 duration-150 ease-in-out hover:-translate-y-1 hover:scale-110 hover:opacity-90">
-                    <i class="fa-solid fa-virus-slash p-2 text-4xl text-[#2B2D42]"></i><p class="text-[#2B2D42] text-center lg:text-sm xl:text-lg">Desparasitacion</p>
-                </li>
-                <li class="cursor-pointer h-[20vh] w-[20vh] bg-[#EDF2F4] rounded-xl text-center flex flex-col items-center justify-center transition delay-100 duration-150 ease-in-out hover:-translate-y-1 hover:scale-110 hover:opacity-90">
-                    <i class="fa-solid fa-user-doctor text-4xl text-[#2B2D42] p-2"></i><p class="text-[#2B2D42] text-center">Cirugias</p>
-                </li>
-                <li class="cursor-pointer h-[20vh] w-[20vh] bg-[#EDF2F4] rounded-xl text-center flex flex-col items-center justify-center transition delay-100 duration-150 ease-in-out hover:-translate-y-1 hover:scale-110 hover:opacity-90">
-                    <i class="fa-solid fa-bath text-4xl text-[#2B2D42] p-2"></i><p class="text-[#2B2D42] text-center">Peluqueria y Baño</p>
-                </li>
-                <li class="cursor-pointer h-[20vh] w-[20vh] bg-[#EDF2F4] rounded-xl text-center flex flex-col items-center justify-center transition delay-100 duration-150 ease-in-out hover:-translate-y-1 hover:scale-110 hover:opacity-90">
-                    <i class="fa-solid fa-bowl-food text-4xl text-[#2B2D42] p-2"></i><p class="text-[#2B2D42] text-center">Venta de Alimentos</p>
-                </li>
-           
+            <ul class="grid grid-cols-2 gap-x-2 gap-y-8 p-2 sm:grid-cols-3 sm:p-4 sm:gap-x-5 ">
+                <li class="text-center flex flex-col items-center justify-center w-32 h-32 bg-[#EDF2F4] rounded-lg"><i class="fa-solid fa-syringe "></i><p class="">Vacunacion</p></li>
+                <li class="text-center flex flex-col items-center justify-center w-32 h-32 bg-[#EDF2F4] rounded-lg"><i class="fa-solid fa-house-chimney-medical "></i><p class="">Consulta Medica</p></li>
+                <li class="text-center flex flex-col items-center justify-center w-32 h-32 bg-[#EDF2F4] rounded-lg"><i class="fa-solid fa-virus-slash "></i><p class="">Desparasitacion</p></li>
+                <li class="text-center flex flex-col items-center justify-center w-32 h-32 bg-[#EDF2F4] rounded-lg"><i class="fa-solid fa-user-doctor "></i><p class="">Cirugias</p></li>
+                <li class="text-center flex flex-col items-center justify-center w-32 h-32 bg-[#EDF2F4] rounded-lg"><i class="fa-solid fa-bath "></i><p class="">Peluqueria y Baño</p></li>
+                <li class="text-center flex flex-col items-center justify-center w-32 h-32 bg-[#EDF2F4] rounded-lg"><i class="fa-solid fa-bowl-food "></i><p class="">Venta de Alimentos</p></li>
             </ul>
 
         </div>
 
     </section>
 
-    <footer class="bg-[#2B2D42] h-[25vh] flex items-center justify-around flex-wrap max-md:h-[40vh] max-sm:flex-wrap-reverse">
-       
-    <div class="flex items-center justify-center">
-        <img src="assets/logo.png" alt="Logo Veterinaria Huellitas" class="w-12 h-12 mr-5">
-        <p class="text-white">&#169 2025. Todos los derechos reservados | </p>
-    </div>
+    <footer class="h-[20vh] ">
 
-    <div class="text-white ">
-        <h4 class="text-[#EF233C]">Contacto</h4>
-        <ul class="text-sm">
-            <li class="pb-1">Atención Teléfonica:</li>
-            <li class="pb-3"><a href="#" class="hover:text-[#EF233C]">0810-222-1212</a></li>
-            <li class="pb-1">Atención Whatsapp:</li>
-            <li class="pb-3"><a href="#" class="hover:text-[#EF233C]">+54-911-2121-2222</a></li>
-            <li class="pb-1">Lunes a Sábados de 9 a 21 hs</li>
-            <li>Domingos de 10 a 20 hs</li>
-        </ul>
-    </div>
+        <div class="w-full h-full flex items-center justify-between bg-[#2B2D42]">
+            <div class="w-full flex items-center justify-between">
+    
+                <div class="ml-6">
+        
+                    <ul class="flex flex-col gap-y-3 text-[#EDF2F4]">
+                        <li class=""><a href="index.html" class="">Inicio</a></li>
+                        <li class=""><a href="sobreNosotros.html" class="">Sobre Nosotros</a></li>
+                        <li class=""><a href="servicios.html" class="">Servicios</a></li>
+                        <li class=""><a href="sesion.html" class="">Iniciar Sesion</a></li>
+                    </ul>
+    
+                </div>
+            </div>
 
-    <div class="text-white">
-        <h4 class="text-[#EF233C] pb-3">Redes sociales</h4>
-        <ul class="text-2xl flex items-center  justify-center  gap-x-4">
-            <li class=""><a href="#" class="hover:text-[#EF233C]"><i class="fa-brands fa-facebook"></i></a></li>
-            <li class=""><a href="#" class="hover:text-[#EF233C]"><i class="fa-brands fa-instagram"></i></a></li>
-            <li class=""><a href="#" class="hover:text-[#EF233C]"><i class="fa-brands fa-square-x-twitter"></i></a></li>
-        </ul>
-    </div>
+            <div>
+                <ul class="flex flex-row gap-x-4 mr-4">
+                    <li class="text-[#EDF2F4] "><a href="facebook.com" target="_blank"><i class="fa-brands fa-facebook text-5xl text-[#EDF2F4] hover:text-[#EF233C] transition-all"></i></a> </li>
+                    <li class="text-[#EDF2F4]"><a href="instagram.com" target="_blank"><i class="fa-brands fa-instagram text-5xl text-[#EDF2F4] hover:text-[#EF233C] transition-all"></i></a></li>
+                    <li class="text-[#EDF2F4]"><a href="whatsapp.com" target="_blank"><i class="fa-brands fa-whatsapp text-5xl text-[#EDF2F4] hover:text-[#EF233C] transition-all"></i></a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="w-full bg-[#2B2D42] border-t-4 border-[#EDF2F4] text-center p-4 text-[#EDF2F4] text-xl">
+            Veterinaria Huellitas - Todos los derechos reservados © 2025
+        </div>
 
     </footer>
 
@@ -173,4 +159,3 @@
     
 </body>
 </html>
-
