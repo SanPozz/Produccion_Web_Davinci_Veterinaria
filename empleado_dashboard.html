@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Huellitas - Panel de Empleado</title>
+</head>
+<body>
+    <header class="bg-[#EDF2F4] border-b-5 border-[#2B2D42]">
+
+
+        <div class=" relative mx-auto  flex  flex-col  sm:flex-row sm:items-center gap-4 py-4 max-w-screen-lg sm:justify-between">
+           <div class="flex items-center">
+            <a href="index.html"><img src="/assets/logo.png" alt="Logo Veterinaria Huellitas" class="w-12 h-12"></a>
+            <a href="empleado_dashboard.html"><h1 class="text-3xl text-[#2B2D42]">Veterinaria Huellitas</h1></a>
+        </div>
+       
+    
+       <input class="peer hidden" type="checkbox" id="navbar-open">
+       <label for="navbar-open" class="absolute right-0 mt-2 sm:hidden">
+       
+            <ion-icon name="menu" class="text-3xl cursor-pointer "></ion-icon>
+             
+       </label>
+    
+   
+    <nav class="peer-checked:block hidden sm:block bg-[#2B2D42] sm:bg-transparent shadow-lg sm:shadow-none rounded-lg sm:rounded-none p-4 sm:p-0">
+    <ul class="flex flex-col gap-y-4 sm:flex-row sm:gap-x-8">
+        <li class="md:hover:bg-[#EF233C] px-4 py-2 md:rounded-full sm:px-0 sm:py-0">
+            <a href="sesion.html" class="text-lg md:hover:text-black hover:text-[#ed808d]">Cerrar Sesión</a>
+        </li>
+    </ul>
+</nav>
+</div>
+    </header>
+    <h1 class="text-4xl text-center mt-5 border-b-4 border-[#2B2D42] border-rounded-2xl">¡Bienvenido empleado! <br> ¿Qué desea hacer hoy?</h1>
+    <section class="bg-[#2B2D42] w-full flex justify-center py-10 mt-5">
+        <div class="w-11/12 md:w-3/4 lg:w-2/3 bg-[#3B3D56] rounded-lg shadow-lg p-6 flex flex-col md:flex-row items-center justify-between mt-6 sm:mt-8 md:mt-10">
+            <div class="flex flex-col-reverse items-center group">
+                <a href="/pages/empleado_mascotas.html" class="text-lg md:text-2xl text-[#2B2D42] bg-[#EDF2F4] mt-4 p-3 rounded-xl peer hover:text-[#EF233C] hover:bg-[#EDF2F4] transition-all duration-400">Mascotas</a>
+                <i class="fa-solid fa-paw text-5xl md:text-7xl text-[#EDF2F4] peer-hover:text-[#EF233C] transition-all ease-in-out duration-400"></i>
+            </div>
+            <div class="flex flex-col-reverse items-center group">
+                <a href="/pages/empleado_diagnostico.html" class="text-lg md:text-2xl text-[#2B2D42] bg-[#EDF2F4] mt-4 p-3 rounded-xl peer hover:text-[#EF233C] hover:bg-[#EDF2F4] transition-all duration-400">Diagnósticos</a>
+                <i class="fa-solid fa-stethoscope text-5xl md:text-7xl text-[#EDF2F4] peer-hover:text-[#EF233C] transition-all ease-in-out duration-400"></i>
+            </div>
+            <div class="flex flex-col-reverse items-center group">
+                <a href="/pages/empleado_facturacion.html" class="text-lg md:text-2xl text-[#2B2D42] bg-[#EDF2F4] mt-4 p-3 rounded-xl peer hover:text-[#EF233C] hover:bg-[#EDF2F4] transition-all duration-400">Facturación</a>
+                <i class="fa-solid fa-receipt text-5xl md:text-7xl text-[#EDF2F4] peer-hover:text-[#EF233C] transition-all ease-in-out duration-400"></i>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

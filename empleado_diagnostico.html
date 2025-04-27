@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Huellitas - Panel de Diagnóstico</title>
+</head>
+<body class="h-screen flex">
+
+    <aside class="h-full w-[10%]">
+    
+        <nav class="flex flex-col bg-[#7C8AA2] h-full w-full items-center justify-between">
+            <ul class="flex flex-col gap-y-10 pt-20 w-full items-center h-[80%]">
+                <li class="w-full text-center h-[12%] flex items-center justify-center">
+                    <a href="empleado_dashboard.html" class="text-[#2B2D42] flex flex-col items-center justify-center gap-2 w-full bg-[#7C8AA2] hover:brightness-80 transition-all duration-300">
+                        <i class="fa-solid fa-wrench text-3xl text-[#EDF2F4] mt-2"></i> 
+                        Dashboard
+                    </a>
+                </li>
+                <li class="w-full text-center h-[12%] flex items-center justify-center">
+                    <a href="empleado_mascotas.html" class="text-[#2B2D42] flex flex-col items-center justify-center gap-2 w-full bg-[#7C8AA2] hover:brightness-80 transition-all duration-300">
+                        <i class="fa-solid fa-paw text-3xl text-[#EDF2F4] mt-2"></i> 
+                        Mascotas
+                    </a>
+                </li>
+                <li class="w-full text-center h-[12%] flex items-center justify-center">
+                    <a href="empleado_diagnostico.html" class="text-[#2B2D42] flex flex-col items-center justify-center gap-2 w-full bg-[#7C8AA2] hover:brightness-80 transition-all duration-300">
+                        <i class="fa-solid fa-stethoscope text-3xl text-[#EDF2F4] mt-2"></i> 
+                        Diagnósticos
+                    </a>
+                </li>
+                <li class="w-full text-center h-[12%] flex items-center justify-center">
+                    <a href="empleado_facturacion.html" class="text-[#2B2D42] flex flex-col items-center justify-center gap-2 w-full bg-[#7C8AA2] hover:brightness-80 transition-all duration-300">
+                        <i class="fa-solid fa-receipt text-3xl text-[#EDF2F4] mt-2"></i> 
+                        Facturación
+                    </a>
+                </li>
+            </ul>
+    
+            <div class="flex flex-col items-center justify-center w-full h-[20%]">
+                <a href="sesion.html" class="text-[#2B2D42] flex flex-col items-center justify-center gap-2 w-full bg-[#7C8AA2] hover:brightness-80 transition-all duration-300 text-center"><i class="fa-solid fa-user text-2xl text-[#EDF2F4] mt-2"></i>Cerrar Sesion</a>
+            </div>
+        </nav>
+
+    </aside>
+    <main class="h-full w-[90%] flex flex-col items-center bg-[#EDF2F4] overflow-y-scroll">
+        <h1 class="text-4xl mt-10 border-b-4 border-[#2B2D42] border-rounded-2xl">Diagnósticos</h1>
+        <div class="w-full mx-auto p-20">
+            <div class="p-4 mt-10 w-100 border-2 rounded-tl-lg rounded-tr-lg p-4 border-b border-slate-600 bg-slate-700 flex justify-center items-center">
+                <form class="text-sm">      
+                    <input type="hidden" name="buscar" >
+                    <select name="opcion" required class="bg-white p-1 rounded-tl-lg rounded-bl-lg">
+                        <option value="usuario">Mascota</option>
+                        <option value="id">Id</option>
+                    </select>
+                    <input type="text" name="busquedaadad" require class="border-2 bg-white p-1" placeholder="Ingresar busqueda">
+                    <input type="submit" value="Buscar" class="buscar bg-white p-1 border-2 rounded-tr-lg rounded-br-lg cursor-pointer text-sm hover:opacity-90">
+                </form>
+            </div>
+           <div class="flex flex-col w-full h-full  text-slate-300 bg-slate-800 shadow-md  bg-clip-border rounded-bl-xl  touch-auto overflow-auto">
+               <table class="w-full text-left table-auto min-w-max rounded-tl-lg">
+                   <thead class="uppercase">
+                       <tr>
+                           <th class="p-4 border-b border-slate-600 bg-slate-700">
+                               <p class="text-sm font-normal leading-none text-slate-300">
+                                   nombre
+                               </p>
+                           </th>
+                           <th class="p-4 border-b border-slate-600 bg-slate-700">
+                               <p class="text-sm font-normal leading-none text-slate-300">
+                                   tipo
+                               </p>
+                           </th>
+                           <th class="p-4 border-b border-slate-600 bg-slate-700">
+                               <p class="text-sm font-normal leading-none text-slate-300">
+                                   raza
+                               </p>
+                           </th>
+                           <th class="p-4 border-b border-slate-600 bg-slate-700">
+                               <p class="text-sm font-normal leading-none text-slate-300">
+                                   dueño
+                               </p>
+                           </th>
+                           <th class="p-4 border-b border-slate-600 bg-slate-700">
+                            <p class="text-sm font-normal leading-none text-slate-300">
+                                Diagnóstico
+                            </p>
+                        </th>
+                           <th class="p-4 border-b border-slate-600 bg-slate-700">
+                            <p class="text-sm font-normal leading-none text-slate-300">
+                                Acciones
+                            </p>
+                        </th>
+                           
+                       </tr>
+                   </thead>
+        
+        
+                   <tbody>
+                       <tr class="hover:bg-slate-700">
+                           <td class="p-4 border-b border-slate-700 bg-slate-900">
+                               <p class="text-sm text-slate-100 font-semibold">
+                                   Roberto
+                               </p>
+                           </td>
+                           <td class="p-4 border-b border-slate-700 bg-slate-800">
+                               <p class="text-sm text-slate-300">
+                                   Canino
+                               </p>
+                           </td>
+                           <td class="p-4 border-b border-slate-700 bg-slate-900">
+                               <p class="text-sm text-slate-300">
+                                   Callejero
+                               </p>
+                           </td>
+                           <td class="p-4 border-b border-slate-700 bg-slate-800">
+                               <p class="text-sm text-slate-300">
+                                   Axel
+                               </p>
+                           </td>
+                           <td class="p-4 border-b border-slate-700 bg-slate-900">
+                            <p class="text-sm text-slate-300">
+                                Vacuna
+                            </p>
+                        </td>
+                           <td class="p-4 bg-slate-800 text-sm text-slate-300 flex gap-5 ">
+                            <a href="" class="hover:text-blue-500 rounded-"><i class="fa-solid fa-user-pen"></i></a>
+                             <a href="" class="hover:text-blue-500"><i class="fa-solid fa-trash"></i></a>
+                        </td>
+                       </tr>
+        
+        
+                       <tr class="hover:bg-slate-700">
+                           <td class="p-4 border-b border-slate-700 bg-slate-900">
+                               <p class="text-sm text-slate-100 font-semibold">
+                                Sultan
+                               </p>
+                           </td>
+                           <td class="p-4 border-b border-slate-700 bg-slate-800">
+                               <p class="text-sm text-slate-300">
+                                Felino
+                               </p>
+                           </td>
+                           <td class="p-4 border-b border-slate-700 bg-slate-900">
+                               <p class="text-sm text-slate-300">
+                                   Siamés
+                               </p>
+                           </td>
+                           <td class="p-4 border-b border-slate-700 bg-slate-800">
+                               <p class="text-sm text-slate-300">
+                                   Carlos
+                               </p>
+                           </td>
+                           <td class="p-4 border-b border-slate-700 bg-slate-900">
+                            <p class="text-sm text-slate-300">
+                                Vacuna
+                            </p>
+                           <td class="p-4 bg-slate-800 text-sm text-slate-300 flex gap-5 ">
+                            <a href="" class="hover:text-blue-500 rounded-"><i class="fa-solid fa-user-pen"></i></a>
+                             <a href="" class="hover:text-blue-500"><i class="fa-solid fa-trash"></i></a>
+                        </td>
+                       </tr>
+        
+        
+                       <tr class="hover:bg-slate-700">
+                           <td class="p-4 border-b border-slate-700 bg-slate-900">
+                               <p class="text-sm text-slate-100 font-semibold">
+                                   Parcero
+                               </p>
+                           </td>
+                           <td class="p-4 border-b border-slate-700 bg-slate-800">
+                               <p class="text-sm text-slate-300">
+                                   Equino
+                               </p>
+                           </td>
+                           <td class="p-4 border-b border-slate-700 bg-slate-900">
+                               <p class="text-sm text-slate-300">
+                                   Caballo
+                               </p>
+                           </td>
+                           <td class="p-4 border-b border-slate-700 bg-slate-800">
+                               <p class="text-sm text-slate-300">
+                                   Oscar    
+                               </p>
+                           </td>
+                           <td class="p-4 border-b border-slate-700 bg-slate-900">
+                            <p class="text-sm text-slate-300">
+                                Vacuna
+                            </p>
+                           <td class="p-4 bg-slate-800 text-sm text-slate-300 flex gap-5 ">
+                            <a href="" class="hover:text-blue-500 rounded-"><i class="fa-solid fa-user-pen"></i></a>
+                             <a href="" class="hover:text-blue-500"><i class="fa-solid fa-trash"></i></a>
+                        </td>
+        
+        
+                       </tr>
+                       <tr class="hover:bg-slate-700">
+                           <td class="p-4 bg-slate-900">
+                               <p class="text-sm text-slate-100 font-semibold">
+                                   Rey
+                               </p>
+                           </td>
+                           <td class="p-4 bg-slate-800">
+                               <p class="text-sm text-slate-300">
+                                Reptil
+                                </p>
+                           </td>
+                           <td class="p-4 bg-slate-900">
+                               <p class="text-sm text-slate-300">
+                                   Iguana
+                               </p>
+                           </td>
+                           <td class="p-4 bg-slate-800">
+                               <p class="text-sm text-slate-300">
+                                   Mario
+                               </p>
+                           </td>
+                           <td class="p-4 border-b border-slate-700 bg-slate-900">
+                            <p class="text-sm text-slate-300">
+                                Vacuna
+                            </p>
+                           <td class="p-4 bg-slate-800 text-sm text-slate-300 flex gap-5 ">
+                            <a href="" class="hover:text-blue-500 rounded-"><i class="fa-solid fa-user-pen"></i></a>
+                             <a href="" class="hover:text-blue-500"><i class="fa-solid fa-trash"></i></a>
+                        </td>
+                       </tr>
+
+                       <tr class="hover:bg-slate-700">
+                        <td class="p-4 bg-slate-900">
+                            <p class="text-sm text-slate-100 font-semibold">
+                             Lola
+                            </p>
+                        </td>
+                        <td class="p-4 bg-slate-800">
+                            <p class="text-sm text-slate-300">
+                             Vacuno
+                             </p>
+                        </td>
+                        <td class="p-4 bg-slate-900">
+                            <p class="text-sm text-slate-300">
+                             Vaca
+                            </p>
+                        </td>
+                        <td class="p-4 bg-slate-800">
+                            <p class="text-sm text-slate-300">
+                                Pedro
+                            </p>
+                            <td class="p-4 border-b border-slate-700 bg-slate-900">
+                                <p class="text-sm text-slate-300">
+                                    Vacuna
+                                </p>
+                        </td>
+                        <td class="p-4 bg-slate-800 text-sm text-slate-300 flex gap-5 ">
+                         <a href="" class="hover:text-blue-500 rounded-"><i class="fa-solid fa-user-pen"></i></a>
+                          <a href="" class="hover:text-blue-500"><i class="fa-solid fa-trash"></i></a>
+                        </td>
+                        </tr>
+                        <tr class="hover:bg-slate-700">
+                            <td class="p-4 bg-slate-900">
+                                <p class="text-sm text-slate-100 font-semibold">
+                                 Oscar
+                                </p>
+                            </td>
+                            <td class="p-4 bg-slate-800">
+                                <p class="text-sm text-slate-300">
+                                 Bovino
+                                 </p>
+                            </td>
+                            <td class="p-4 bg-slate-900">
+                                <p class="text-sm text-slate-300">
+                                 Oveja
+                                </p>
+                            </td>
+                            <td class="p-4 bg-slate-800">
+                                <p class="text-sm text-slate-300">
+                                Juan
+                                </p>
+                            </td>
+                            <td class="p-4 border-b border-slate-700 bg-slate-900">
+                                <p class="text-sm text-slate-300">
+                                    Vacuna
+                                </p>
+                            <td class="p-4 bg-slate-800 text-sm text-slate-300 flex gap-5 ">
+                             <a href="" class="hover:text-blue-500 rounded-"><i class="fa-solid fa-user-pen"></i></a>
+                              <a href="" class="hover:text-blue-500"><i class="fa-solid fa-trash"></i></a>
+                            </td>
+                            </tr>
+                            
+                   </tbody>
+               </table>
+               </div> 
+        </div>
+    </main>
+</body>
+</html>
